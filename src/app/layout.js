@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import EasterEggButton from "@/components/EasterEggButton";
 
 export const metadata = {
   title: "Create Next App",
@@ -10,6 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+      <EasterEggButton />
         {children}
       </body>
     </html>
