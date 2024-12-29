@@ -1,10 +1,56 @@
+html{
+  background-color: white;
+}
 .header {
-    width: 100%;
-    background-color: #fff;
-    color: #000;
-    padding: 1vh 0vh;
-    box-shadow: 0 .2vh .5vh rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin-top: -1vh;
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  padding: 1vh 0vh;
+  box-shadow: 0 .2vh .5vh rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome{
+  margin-top: 0;
+  height: 100vh;
+  background: linear-gradient(
+    90deg, 
+    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 0) 40%,
+    rgb(43, 48, 62) 65%,
+    rgb(45, 50, 66) 76%,  
+    rgb(0, 0, 0) 100%
+  );    padding-left: 13vh;
+}
+.titlewelcome{
+  padding-top: 18vh;
+  position: relative;
+  width: 60vh;
+  color: white;
+  font-size: 5vh;
+}
+.titlewelcome h1{
+  margin: 0;
   }
+.subtitlewelcome{
+  display: flex;
+  width: 60vh;
+  color: white;
+  font-size: 2.5vh;
+  border: .5vh solid blue;
+}
+.welcome .btnswelcome{
+  margin-top: 3vh
+}
+.welcome .btn1{
+  border: .3vh solid #6b4f45;
+  border-radius: 1vh;
+  padding: 1vh 2vh;
+  font-size: 3.5vh;
+  color: white;
+  background-color: #AB7C6D;
+  text-decoration: none;
+}

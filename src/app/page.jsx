@@ -20,7 +20,20 @@ export default function Home() {
         </div>
       </header>
 
-      <div className="welcome"></div>
+      <div className="welcome">
+        <div className="titlewelcome">
+          <h1>TRANSFORMA TU VIDA CON GIMNASIO</h1>
+          <h1>ST. JOHNS</h1>
+        </div>
+        <div className="subtitlewelcome">
+          <h2>Unete al Gimnasio St. John´s y forma parte de la gran comunidad Fitness, con entrenadores especializados, programas personalizados y areas enfocadas para lograr tus metas saludables.</h2>
+        </div>
+        <div className="btnswelcome">
+          <a href="#" className="btn1">
+            Comenzar
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
