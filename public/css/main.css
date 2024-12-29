@@ -14,7 +14,7 @@ html{
   align-items: center;
 }
 
-.welcome{
+.part1{
   margin-top: 0;
   height: 100vh;
   background: linear-gradient(
@@ -43,10 +43,10 @@ html{
   font-size: 2.5vh;
   border: .5vh solid blue;
 }
-.welcome .btnswelcome{
+.part1 .btnswelcome{
   margin-top: 3vh
 }
-.welcome .btn1{
+.part1 .btn1{
   border: .3vh solid #6b4f45;
   border-radius: 1vh;
   padding: 1vh 2vh;

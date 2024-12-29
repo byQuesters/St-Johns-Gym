@@ -20,7 +20,7 @@ export default function Home() {
         </div>
       </header>
 
-      <div className="welcome">
+      <div className="part1">
         <div className="titlewelcome">
           <h1>TRANSFORMA TU VIDA CON GIMNASIO</h1>
           <h1>ST. JOHNS</h1>
@@ -33,6 +33,10 @@ export default function Home() {
             Comenzar
           </a>
         </div>
+      </div>
+
+      <div className="part2">
+
       </div>
     </div>
   );
