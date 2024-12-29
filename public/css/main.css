@@ -24,7 +24,8 @@ html{
     rgb(43, 48, 62) 65%,
     rgb(45, 50, 66) 76%,  
     rgb(0, 0, 0) 100%
-  );    padding-left: 13vh;
+  );    
+  padding-left: 13vh;
 }
 .titlewelcome{
   padding-top: 18vh;
@@ -54,4 +55,56 @@ html{
   color: white;
   background-color: #AB7C6D;
   text-decoration: none;
+}
+
+.part2{
+  margin-top: 15vh;
+  padding-left: 13vh;
+}
+.part2 .part2divs{
+  display: flex;
+  width: 100%;
+}
+.part2 .part2divs .image1{
+  border: 1px solid black;
+  width: 40%;
+}
+.part2 .part2divs .text{
+  width: 50%;
+  border: 1px solid red;
+}
+.part2 .part2divs .text h2{
+  font-size: 5vh;
+  margin-left: 3vh;
+}
+.part2 .part2divs .text h3{
+  font-size: 3.5vh;
+  margin-left: 3vh;
+  font-weight: lighter;
+}
+.custom-list {
+  margin-top: 5vh;
+  list-style: none; /* Quita las viñetas predeterminadas */
+  padding: 0;
+  font-size: 3.5vh;
+}
+.custom-list li {
+  display: flex;
+  align-items: flex-start; /* Alinea los elementos verticalmente */
+  margin-bottom: 3vh; /* Espacio entre los elementos */
+}
+.custom-list li::before {
+  content: "✔"; /* Simula un icono personalizado */
+  color: #b97a63; /* Color marrón del icono */
+  font-size: 3.5vh; /* Tamaño del icono */
+  margin-left: 4vh;
+  margin-right: 1vh; /* Espacio entre el icono y el texto */
+}
+.custom-list-title {
+  font-weight: bold; /* Títulos en negrita */
+  margin: 0; /* Quita márgenes innecesarios */
+}
+.custom-list-text {
+  margin: 1vh 0 0; /* Espaciado solo arriba */
+  color: #555; /* Color gris para el texto */
 }

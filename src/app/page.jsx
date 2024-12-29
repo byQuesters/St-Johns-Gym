@@ -36,8 +36,37 @@ export default function Home() {
       </div>
 
       <div className="part2">
-
+        <div className="part2divs">
+          <div className="image1">
+            <img src="#" alt="" />
+          </div>
+          <div className="text">
+            <h2>¿Por qué escoger el Gimnasio ST. John´s?</h2>
+            <h3>Descubra los beneficios que nos distinguen e impulse su viaje de acondicionamiento físico hacia adelante.</h3>
+            <ul className="custom-list">
+              <li>
+                <div>
+                  <p className="custom-list-title">Orientadores de Entrenamiento</p>
+                  <p className="custom-list-text">Nuestros entrenadores certificados brindan orientación personalizada y asistencia para lograr tus metas.</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p className="custom-list-title">Equipos de Alta Calidad</p>
+                  <p className="custom-list-text">Entrena con los equipos de fitness más modernos y avanzados para maximizar tus resultados y mejorar tu experiencia.</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p className="custom-list-title">Programas Integrales</p>
+                  <p className="custom-list-text">Disfrute de una variedad de clases y programas adaptados a todos los niveles de condición física, desde principiante hasta avanzado.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div> 
       </div>
+
     </div>
   );
 }
