@@ -38,7 +38,7 @@ export default function Home() {
       <div className="part2">
         <div className="part2divs">
           <div className="image1">
-            <img src="#" alt="" />
+            <img src="https://th.bing.com/th/id/R.11ec291058ea3cc8b5df03c779224ce8?rik=WHf%2fyCJ7533e9Q&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f9%2f7%2f9%2f200446.jpg&ehk=fydI%2b4RjHcPqBMTBiwXDvXTv6BshXM75z%2f4ERjYFJNc%3d&risl=&pid=ImgRaw&r=0" alt="" />
           </div>
           <div className="text">
             <h2>¿Por qué escoger el Gimnasio ST. John´s?</h2>
