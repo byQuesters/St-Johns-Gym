@@ -135,7 +135,7 @@ export default function Home() {
               <button>Únete ahora</button>
             </div>
             <div className="image-content">
-              <img src="yoga-meditation.jpg" alt="Meditación" class="main-image" />
+              <img src="yoga-meditation.jpg" alt="Meditación" className="main-image" />
             </div>
           </div>
 
@@ -148,14 +148,14 @@ export default function Home() {
           <h2>Opciones de membresía flexibles que se adaptan a sus objetivos y estilo de vida. ¡Encuentre la opción adecuada y comience a transformar su vida hoy mismo!</h2>
 
           <div className="pricing-section">
-            <div class="pricing-header">
-              <button class="pricing-tab active">Nuevo</button>
-              <button class="pricing-tab">Estudiante</button>
+            <div className="pricing-header">
+              <button className="pricing-tab active">Nuevo</button>
+              <button className="pricing-tab">Estudiante</button>
             </div>
-            <div class="pricing-cards">
-              <div class="pricing-card">
+            <div className="pricing-cards">
+              <div className="pricing-card">
                 <h3>SEMANAL</h3>
-                <p class="price">$123MXN</p>
+                <p className="price">$123MXN</p>
                 <ul>
                   <li>✔ Acceso ilimitado a los equipos del gimnasio</li>
                   <li>✔ Acceso a clases grupales de fitness</li>
@@ -165,9 +165,9 @@ export default function Home() {
                 </ul>
                 <button>Obtener ahora</button>
               </div>
-              <div class="pricing-card featured">
+              <div className="pricing-card featured">
                 <h3>MENSUALIDAD</h3>
-                <p class="price">$123MXN</p>
+                <p className="price">$123MXN</p>
                 <ul>
                   <li>✔ Acceso ilimitado a los equipos del gimnasio</li>
                   <li>✔ Acceso a clases grupales de fitness</li>
@@ -177,9 +177,9 @@ export default function Home() {
                 </ul>
                 <button className="btnoa">Obtener ahora</button>
               </div>
-              <div class="pricing-card">
+              <div className="pricing-card">
                 <h3>ANUAL</h3>
-                <p class="price">$1234MXN</p>
+                <p className="price">$1234MXN</p>
                 <ul>
                   <li>✔ Acceso ilimitado a los equipos del gimnasio</li>
                   <li>✔ Acceso a clases grupales de fitness</li>
@@ -207,11 +207,11 @@ export default function Home() {
             <a href="#contacto">Contáctanos</a>
           </div>
           <div className="footer-social">
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-whatsapp"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
-            <a href="#"><i class="bi bi-youtube"></i></a>
+            <a href="#"><i className="bi bi-facebook"></i></a>
+            <a href="#"><i className="bi bi-instagram"></i></a>
+            <a href="#"><i className="bi bi-whatsapp"></i></a>
+            <a href="#"><i className="bi bi-linkedin"></i></a>
+            <a href="#"><i className="bi bi-youtube"></i></a>
           </div>
           <div className="footer-bottom">
             <p>© 2024 Gimnasio Manzanillo St. John’s. Todos los derechos reservados.</p>

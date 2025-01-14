@@ -18,6 +18,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
 .part1{
@@ -122,7 +123,7 @@ html, body {
 
 .part3{
   margin-top: 0;
-  height: 100vh;
+  height: auto;
   padding-left: 13vh;
   margin-top: 20vh;
 }
@@ -191,9 +192,9 @@ html, body {
 }
 
 .part4{
-  height: 100vh;
+  height: auto;
   padding-left: 13vh;
-  margin-top: 40vh;
+  margin-top: 20vh;
 }
 .part4 .trayectory{
   width: 90%;
