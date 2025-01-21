@@ -1,0 +1,110 @@
+.part5{
+    height: 100vh;
+    padding-left: 13vh;
+    margin-top: 13vh;
+  }
+  .part5 .plans{
+    width: 90%;
+    border: 1vh solid black;
+  }
+  .part5 .plans h1{
+    margin: 0;
+    font-size: 6vh;
+    text-align: center;
+    font-weight: bold;
+  }
+  .part5 .plans h2{
+    margin-top: 2vh;
+    font-size: 3.5vh;
+    text-align: center;
+    font-weight: lighter;
+  }
+  .pricing-section {
+    padding: 20px;
+    text-align: center;
+  }
+  .pricing-header {
+    margin-bottom: 20px;
+  }
+  .pricing-tab {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+  }
+  .pricing-tab.active {
+    background-color: #a97a65;
+    color: white;
+    border-color: #a97a65;
+  }
+  .pricing-tab:hover {
+    background-color: #d7a796;
+  }
+  .pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .pricing-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 1vh;
+    padding: 2vh;
+    text-align: left;
+    width: 35vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .pricing-card.featured {
+    background-color: #a97a65;
+    color: white;
+    border: 2px solid #8b604f;
+  }
+  .pricing-card h3 {
+    font-size: 4vh;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .pricing-card .price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+  .pricing-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 5vh;
+  }
+  .pricing-card ul li {
+    margin: 10px 0;
+    font-size: 0.9rem;
+  }
+  .pricing-card button {
+    background-color: #a97a65;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .pricing-card.featured button {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #a97a65; /* Texto en el color principal */
+    border: 2px solid #a97a65; /* Borde del color principal */
+  }
+  .pricing-card.featured button:hover {
+    background-color: #ffdcce; /* Fondo blanco */
+    color: #473229; /* Texto en el color principal */
+    border: 2px solid rgb(103, 93, 80); /* Borde del color principal */
+  }
+  .pricing-card button:hover {
+    background-color: #8b604f;
+  }

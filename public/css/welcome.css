@@ -1,0 +1,42 @@
+.part1{
+    margin-top: 0;
+    height: 100vh;
+    background: linear-gradient(
+      90deg, 
+      rgb(0, 0, 0) 0%,
+      rgb(0, 0, 0) 40%,
+      rgb(43, 48, 62) 65%,
+      rgb(45, 50, 66) 76%,  
+      rgb(0, 0, 0) 100%
+    );    
+    padding-left: 13vh;
+  }
+  .titlewelcome{
+    padding-top: 20vh;
+    position: relative;
+    width: 60vh;
+    color: white;
+    font-size: 4vh;
+  }
+  .titlewelcome h1{
+    margin: 0;
+    }
+  .subtitlewelcome{
+    display: flex;
+    width: 60vh;
+    color: white;
+    font-size: 2vh;
+    border: .5vh solid blue;
+  }
+  .part1 .btnswelcome{
+    margin-top: 3vh
+  }
+  .part1 .btn1{
+    border: .3vh solid #6b4f45;
+    border-radius: 1vh;
+    padding: 1vh 2vh;
+    font-size: 3.5vh;
+    color: white;
+    background-color: #AB7C6D;
+    text-decoration: none;
+  }
