@@ -1,6 +1,8 @@
 "use client";
 
 import aboutstyles from "../../../public/css/about.css"
+import aboutresponstyles from "../../../public/css/responsabout.css"
+
 
 export default function About() {
   return (

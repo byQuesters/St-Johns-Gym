@@ -1,0 +1,221 @@
+/* Estilos básicos para todos los dispositivos */
+body {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 1200px) {
+    .hero-content h1 {
+      font-size: 6vh;
+    }
+    .hero-content p {
+      font-size: 2.5vh;
+    }
+    .about-content h2 {
+      font-size: 5.5vh;
+    }
+    .about-content h3 {
+      font-size: 4.5vh;
+    }
+    .part3 h1,
+    .part4 h1 {
+      font-size: 5.5vh;
+    }
+    .part3 .gymteamdesc p,
+    .part4 .location p {
+      font-size: 2.5vh;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 5vh;
+    }
+    .hero-content p {
+      font-size: 2vh;
+    }
+    .about-content h2 {
+      font-size: 4.5vh;
+    }
+    .about-content h3 {
+      font-size: 3.5vh;
+    }
+    .about-image img {
+      height: 60vh;
+    }
+    .part3 h1,
+    .part4 h1 {
+      font-size: 4.5vh;
+    }
+    .part3 .gymteamdesc p,
+    .part4 .location p {
+      font-size: 2vh;
+    }
+    .card {
+      padding: 1.5vh;
+    }
+    .card-title {
+      font-size: 2vh;
+    }
+    .card-subtitle {
+      font-size: 1.8vh;
+    }
+    .icon {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      padding: 6vh 1vh;
+    }
+    .hero-content h1 {
+      font-size: 4vh;
+    }
+    .hero-content p {
+      font-size: 2.5vh;
+      max-width: 80%;
+    }
+    .about-content {
+        padding-right: 0;
+    }
+    .about-content h2 {
+      font-size: 4vh;
+    }
+    .about-content h3 {
+      font-size: 4vh;
+    }
+    .about-image img {
+      width: 100%;
+      height: auto;
+    }
+    main{
+        padding: 0 3.5vh !important;
+    }
+    .part2 {
+      flex-direction: column;
+      padding: 3vh;
+    }
+    .part2 p{
+        font-size: 2.4vh;
+    }
+    .card-container {
+      gap: 1.5vh;
+      padding: 2vh;
+    }
+    .card {
+      padding: 1vh;
+    }
+    .card-title {
+      font-size: 2.5vh;
+    }
+    .card-subtitle {
+      font-size: 2vh;
+    }
+    .icon {
+      font-size: 10px;
+      padding: 4px 8px;
+    }
+    .part3{
+        margin-top: 10vh;
+    }
+    .part3 h1,
+    .part4 h1 {
+        width: 100%;
+        font-size: 5vh;
+    }
+    .part4{
+        margin-top: 10vh;
+    }
+    .part3 .gymteamdesc p,
+    .part4 .location p {
+      font-size: 3vh;
+      max-width: 90%;
+    }
+    .info-card {
+      padding: 0;
+    }
+    .title {
+        padding: 1vh;
+        font-size: 3vh;
+        text-align: center;
+    }
+    .subtitle {
+        padding: 1vh;
+        font-size: 2.5vh;
+        text-align: center;
+    }
+    .address,
+    .phone,
+    .map-link {
+        width: 90%;
+        font-size: 2.3vh;
+        padding: 1vh;
+        display: flex;
+        text-align: center;
+        margin: auto;
+        margin: auto; /* Centra el contenedor */
+        display: block; /* Asegura que el elemento p ocupe todo el ancho */
+    }      
+  }
+
+  @media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 3.5vh;
+    }
+    .about-content h2 {
+        font-size: 3.45vh;
+    }
+    .part3 .gymteamdesc p, .part4 .location p {
+        font-size: 2.7vh;
+        max-width: 90%;
+    }
+}
+  
+  @media (min-width: 1600px) {
+    .hero-content h1 {
+      font-size: 8vh;
+    }
+    .hero-content p {
+      font-size: 3.5vh;
+    }
+    .about-content h2 {
+      font-size: 8vh;
+    }
+    .about-content h3 {
+      font-size: 6vh;
+    }
+    .card-title {
+      font-size: 2.8vh;
+    }
+    .card-subtitle {
+      font-size: 2vh;
+    }
+    .part3 h1,
+    .part4 h1 {
+      font-size: 7vh;
+    }
+    .part3 .gymteamdesc p,
+    .part4 .location p {
+      font-size: 3.5vh;
+    }
+    .info-card {
+      padding: 30px;
+    }
+    .title {
+      font-size: 5vh;
+    }
+    .subtitle {
+      font-size: 4vh;
+    }
+    .address,
+    .phone,
+    .map-link {
+      font-size: 3vh;
+    }
+  }
+  
