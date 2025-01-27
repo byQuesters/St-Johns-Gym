@@ -8,65 +8,199 @@ body {
   }
   
   /* Estilos responsivos */
-  @media (max-width: 1200px) {
-    .hero-content h1 {
-      font-size: 6vh;
+  @media (max-width: 1024px) {
+    .hero-content{
+      margin: auto;
+      width: 100%;
     }
-    .hero-content p {
-      font-size: 2.5vh;
-    }
-    .about-content h2 {
-      font-size: 5.5vh;
-    }
-    .about-content h3 {
-      font-size: 4.5vh;
-    }
-    .part3 h1,
-    .part4 h1 {
-      font-size: 5.5vh;
-    }
-    .part3 .gymteamdesc p,
-    .part4 .location p {
-      font-size: 2.5vh;
-    }
-  }
-  
-  @media (max-width: 768px) {
     .hero-content h1 {
       font-size: 5vh;
     }
     .hero-content p {
-      font-size: 2vh;
+      max-width: 70%;
+      font-size: 3vh;
+    }
+    .part2{
+      width: 100%;
+      flex-direction: column;
+    }
+    .about-content{
+      width: 100%;
+      padding-right: 0;
+      flex: 1;
+    }
+    .about-image{
+      width: 100%;
+      display: block;
     }
     .about-content h2 {
-      font-size: 4.5vh;
+      margin: auto !important;
+      text-align: center !important;
+      width: 80%;
+      font-size: 4.8vh;
+    }
+    .part2 p{
+      font-size: 3vh;
     }
     .about-content h3 {
-      font-size: 3.5vh;
+      text-align: center;
+      font-size: 4vh;
     }
-    .about-image img {
-      height: 60vh;
+    .part4{
+      margin-top: 15vh;
     }
     .part3 h1,
     .part4 h1 {
-      font-size: 4.5vh;
+      width: 100%;
+      font-size: 5vh;
     }
     .part3 .gymteamdesc p,
     .part4 .location p {
-      font-size: 2vh;
+      max-width: 85%;
+      font-size: 3vh;
     }
     .card {
-      padding: 1.5vh;
+      padding: 2vh;
     }
     .card-title {
-      font-size: 2vh;
+      font-size: 3vh;
     }
     .card-subtitle {
-      font-size: 1.8vh;
+      font-size: 2.5vh;
     }
     .icon {
-      font-size: 12px;
+      font-size: 1.5vh;
     }
+    .container{
+      margin: auto;
+    }
+    .part3 .gymteamdesc p,
+    .part4 .location p {
+      font-size: 3vh;
+      max-width: 90%;
+    }
+    .info-card {
+      margin: auto;
+      padding: 0;
+    }
+    .title {
+        padding: 1vh;
+        font-size: 3vh;
+        text-align: center;
+    }
+    .subtitle {
+        padding: 1vh;
+        font-size: 2.5vh;
+        text-align: center;
+    }
+    .address,
+    .phone,
+    .map-link {
+        width: 90%;
+        font-size: 2.3vh;
+        padding: 1vh;
+        display: flex;
+        text-align: center;
+        margin: auto;
+        margin: auto; /* Centra el contenedor */
+        display: block; /* Asegura que el elemento p ocupe todo el ancho */
+    }      
+  }
+
+  @media (max-width: 768px) {
+    .hero-content{
+      margin: auto;
+      width: 100%;
+    }
+    .hero-content h1 {
+      font-size: 5vh;
+    }
+    .hero-content p {
+      max-width: 70%;
+      font-size: 3vh;
+    }
+    .part2{
+      width: 100%;
+      flex-direction: column;
+    }
+    .about-content{
+      width: 100%;
+      padding-right: 0;
+      flex: 1;
+    }
+    .about-image{
+      width: 100%;
+      display: block;
+    }
+    .about-content h2 {
+      margin: auto;
+      text-align: center;
+      width: 80%;
+      font-size: 5vh;
+    }
+    .part2 p{
+      font-size: 3vh;
+    }
+    .about-content h3 {
+      text-align: center;
+      font-size: 4vh;
+    }
+    .part3 h1,
+    .part4 h1 {
+      width: 100%;
+      font-size: 5vh;
+    }
+    .part3 .gymteamdesc p,
+    .part4 .location p {
+      max-width: 85%;
+      font-size: 3vh;
+    }
+    .card {
+      padding: 2vh;
+    }
+    .card-title {
+      font-size: 3vh;
+    }
+    .card-subtitle {
+      font-size: 2.5vh;
+    }
+    .icon {
+      font-size: 1.5vh;
+    }
+    .container{
+      margin: auto;
+    }
+    .part3 .gymteamdesc p,
+    .part4 .location p {
+      font-size: 3vh;
+      max-width: 90%;
+    }
+    .info-card {
+      margin: auto;
+      padding: 0;
+    }
+    .title {
+        padding: 1vh;
+        font-size: 3vh;
+        text-align: center;
+    }
+    .subtitle {
+        padding: 1vh;
+        font-size: 2.5vh;
+        text-align: center;
+    }
+    .address,
+    .phone,
+    .map-link {
+        width: 90%;
+        font-size: 2.3vh;
+        padding: 1vh;
+        display: flex;
+        text-align: center;
+        margin: auto;
+        margin: auto; /* Centra el contenedor */
+        display: block; /* Asegura que el elemento p ocupe todo el ancho */
+    }      
   }
   
   @media (max-width: 480px) {
@@ -74,6 +208,7 @@ body {
       padding: 6vh 1vh;
     }
     .hero-content h1 {
+      width: 90%;
       font-size: 4vh;
     }
     .hero-content p {
@@ -84,7 +219,7 @@ body {
         padding-right: 0;
     }
     .about-content h2 {
-      font-size: 4vh;
+      font-size: 5vh;
     }
     .about-content h3 {
       font-size: 4vh;
@@ -94,11 +229,11 @@ body {
       height: auto;
     }
     main{
-        padding: 0 3.5vh !important;
+      padding: auto;
     }
     .part2 {
       flex-direction: column;
-      padding: 3vh;
+      padding: 0;
     }
     .part2 p{
         font-size: 2.4vh;
@@ -125,10 +260,11 @@ body {
     }
     .part3 h1,
     .part4 h1 {
-        width: 100%;
-        font-size: 5vh;
+        width: 90%;
+        font-size: 4vh;
     }
     .part4{
+      width: 100%;
         margin-top: 10vh;
     }
     .part3 .gymteamdesc p,
@@ -160,23 +296,44 @@ body {
         margin: auto;
         margin: auto; /* Centra el contenedor */
         display: block; /* Asegura que el elemento p ocupe todo el ancho */
-    }      
-  }
-
-  @media (max-width: 480px) {
-    .hero-content h1 {
-        font-size: 3.5vh;
-    }
-    .about-content h2 {
-        font-size: 3.45vh;
     }
     .part3 .gymteamdesc p, .part4 .location p {
-        font-size: 2.7vh;
-        max-width: 90%;
+        font-size: 2.5vh;
     }
 }
-  
-  @media (min-width: 1600px) {
+
+@media (max-width: 413px) {
+  html{
+    width: 100%;
+  }
+  body{
+    width: 100%;
+  }
+  .hero{
+    width: 100%;
+    padding: 0;
+    padding: 5vh 0 5vh 0;
+  }
+  main{
+    margin: auto;
+    padding: 0;
+    padding: 0 2vh 0 2vh;
+  }
+  .part2{
+    margin-top: 3vh;
+    padding: 1vh;
+  }
+  .about-content h2 {
+    font-size: 4vh;
+  }
+  .part3{
+    width: 100%;
+  }
+  .gymteamdesc{
+    width: 100%;
+  }
+}
+  /* @media (min-width: 1600px) {
     .hero-content h1 {
       font-size: 8vh;
     }
@@ -218,4 +375,4 @@ body {
       font-size: 3vh;
     }
   }
-  
+   */
