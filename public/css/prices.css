@@ -1,11 +1,9 @@
 .part5{
-    height: 100vh;
     padding-left: 13vh;
     margin-top: 13vh;
   }
   .part5 .plans{
     width: 90%;
-    border: 1vh solid black;
   }
   .part5 .plans h1{
     margin: 0;

@@ -7,7 +7,7 @@ import convinceestyles from "../../public/css/convince.css"
 import servicesstyles from "../../public/css/services.css"
 import trayectorystyles from "../../public/css/trayectory.css"
 import pricesstyles from "../../public/css/prices.css"
-
+import responsivewelcome from "../../public/css/responswelcome.css"
 
 export default function Home() {
   return (

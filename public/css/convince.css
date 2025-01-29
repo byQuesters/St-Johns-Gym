@@ -7,7 +7,6 @@
     width: 100%;
   }
   .part2 .part2divs .image1{
-    border: 1px solid black;
     width: 40%;
   }
   .part2 .part2divs .image1 img{
@@ -17,7 +16,6 @@
   }
   .part2 .part2divs .text{
     width: 50%;
-    border: 1px solid red;
   }
   .part2 .part2divs .text h2{
     font-size: 5vh;
