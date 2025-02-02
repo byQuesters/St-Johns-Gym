@@ -9,16 +9,35 @@ body{
   
 /* Estilos responsivos */
 
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+    .header-content{
+        padding: 0vh 0vh;
+    } 
+}
 
-@media (max-width: 768px) {}
-
-
-@media (max-width: 480px) {
-    .header{
+@media (max-width: 768px) {
+    body{
+        margin: auto;
+    }
+    .header-content{
+        padding: 0vh 0vh;
+    }
+    .header-title {
+        width: 15%;
+        font-size: 2vh;
+        margin: 0 0vh;
+        margin-left: 2vh;
+        text-align: center;
+    } 
+    .nav-links {
+        gap: 2vh;
+        margin-right: 5vh;
+    }
+    .photos-btn {
         display: none;
     }
     .part1{
+        padding-top: 15vh;
         width: 100%;
         height: 99vh;
         padding-left: 5vh;
@@ -35,7 +54,7 @@ body{
     }
     .part2{
         margin-top: 7vh;
-        padding-left: 5vh;
+        padding-left: 11vh;
     }
     .part2 .part2divs{
         flex-direction: column;
@@ -68,7 +87,7 @@ body{
     }
     .part3{
         width: 100%;
-        padding-left: 0;
+        padding-left: 2vh;
     }
     .part3 .services{
         margin: auto
@@ -106,7 +125,7 @@ body{
         font-size: 3vh;
     }
     .part5{
-        padding-left: 0;
+        padding-left: 5vh;
     }
     .part5 .plans{
         margin: auto;
@@ -130,6 +149,135 @@ body{
         padding: 1vh;
         justify-content: flex-start;
         margin-left: -2vh;
+        width: 67vh;
+    }
+    .pricing-card {
+        flex: 0 0 80%;
+        scroll-snap-align: center;
+        width: auto;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    .header{
+        display: none;
+    }
+    .part1{
+        padding-top: 0;
+        width: 100%;
+        height: 99vh;
+        padding-left: 5vh;
+    }
+    .titlewelcome {
+        padding-top: 5vh;
+        width: 80%;
+        font-size: 130%;
+    }
+    .subtitlewelcome{
+        width: 80%;
+        color: white;
+        font-size: 70%;
+    }
+    .part2{
+        width: 100%;
+        margin-top: 7vh;
+        padding-left: 5vh;
+    }
+    .part2 .part2divs{
+        flex-direction: column;
+    }
+    .part2 .part2divs .image1{
+        width: 90%;
+        order: 2;
+    }
+    .part2 .part2divs .image1 img{
+        width: 100%;
+        height: auto;
+    }
+    .part2 .part2divs .text{
+        width: 90%;
+        order: 1;
+    }
+    .part2 .part2divs .text h2{
+        font-size: 4vh;
+        line-height: 1.5;
+        margin-left: 0;
+    }
+    .part2 .part2divs .text h3{
+        font-size: 3vh;
+        line-height: 1.5;
+        margin-left: 0;
+    }
+    .custom-list {
+        margin-top: 3vh;
+        font-size: 3.1vh;
+    }
+    .part3{
+        width: 100%;
+        padding-left: 5%;
+    }
+    .part3 .services{
+        margin: auto
+    }
+    .part3 .services h1{
+        font-size: 5vh;
+    }
+    .part3 .services h2{
+        font-size: 3vh;
+    }
+    .grid-container {
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+    }
+    .part4{
+        width: 100%;
+        padding-left: 4%;
+        margin-top: 10vh;
+    }
+    .part4 .trayectory{
+        margin: auto;
+    }
+    .part4 .trayectory h1{
+        font-size: 5vh;
+    }
+    .success-section {
+        flex-direction: column;
+    }
+    .text-content {
+        order: 2;
+    }
+    .text-content {
+        max-width: 100%;
+    }
+    .text-content p {
+        font-size: 3vh;
+    }
+    .part5{
+        padding-left: 12%;
+    }
+    .part5 .plans{
+        margin: auto;
+    }
+    .part5 .plans h1{
+        font-size: 5vh;
+    }
+    .part5 .plans h2{
+        font-size: 3vh;
+        padding: 0 1vh 0 1vh;
+    }
+    .pricing-section {
+        width: 100%;
+    }
+    .pricing-cards {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: .5vh;
+        padding: 1vh;
+        justify-content: flex-start;
+        margin-left: -7vh;
         width: 47vh;
     }
     .pricing-card {
