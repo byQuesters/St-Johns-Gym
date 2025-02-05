@@ -25,8 +25,10 @@ export default function Home() {
           <a href="#" className="photos-btn">Mirar Fotos</a>
         </div>
       </header>
-
       <div className="part1">
+        <div>
+          <img src="/photos/PersonaFit.png" className="photowelcome" alt="" />
+        </div>
         <div className="titlewelcome">
           <h1>TRANSFORMA TU VIDA CON GIMNASIO</h1>
           <h1>ST. JOHNS</h1>
@@ -38,9 +40,6 @@ export default function Home() {
           <a href="#" className="btn1">
             Comenzar
           </a>
-        </div>
-        <div className="photowelcome">
-          <img src="/photos/persona.jpeg" alt="" />
         </div>
       </div>
 

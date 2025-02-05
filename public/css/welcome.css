@@ -45,5 +45,10 @@
   }
 
   .photowelcome{
+    width: 42%;
+    margin-left: 50%;
     position: absolute;
+    height: auto;
+    bottom: 0;
+    z-index: 1;
   }

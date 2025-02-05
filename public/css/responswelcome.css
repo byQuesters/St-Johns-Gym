@@ -164,11 +164,28 @@ body{
 }
 
 
+/* Dispositivo A - 390px x 844px */
+@media (min-width: 390px) and (max-width: 390px) and (min-height: 844px) and (max-height: 844px) {
+    .photowelcome {
+        width: 60%;
+        margin-top: 50vh;
+        margin-left: 37%;
+    }
+}
+
+/* Dispositivo general - Para cualquier dispositivo con un ancho máximo de 480px */
 @media (max-width: 480px) {
+    .photowelcome {
+        overflow: hidden;
+        width: 60%;
+        margin-left: 21vh;
+        bottom: 1vh;
+    }
     .header{
         display: none;
     }
     .part1{
+        overflow: hidden;
         padding-top: 0;
         width: 101%;
         height: 99vh;
