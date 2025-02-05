@@ -39,3 +39,12 @@
     color: #555;
     margin-bottom: 20px;
   }
+  .btn1{
+    border: .3vh solid #6b4f45;
+    border-radius: 1vh;
+    padding: 1vh 2vh;
+    font-size: 3vh;
+    color: white;
+    background-color: #AB7C6D;
+    text-decoration: none;
+  }

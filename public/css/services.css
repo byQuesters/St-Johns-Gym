@@ -33,6 +33,7 @@
     padding: 20px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
+    transition: 300ms;
   }
   .card img {
     width: 100%;
@@ -58,11 +59,11 @@
   }
   .card button:hover {
     background-color: #8b604f;
-  }
-  .card.highlighted {
-    border: 2px solid #a97a65;
+    transition: 300ms;
   }
   .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    border: 2px solid #a97a65;
+    transition: 300ms;
   }

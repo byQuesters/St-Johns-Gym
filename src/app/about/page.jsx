@@ -34,8 +34,16 @@ export default function About() {
                 </div>
                 <div className="card-container">
                     <div className="card">
+                        <img src="/photos/LaloCoachPhoto1.jpeg" alt="Entrenador 2" className="card-image"/>
+                        <h3 className="card-title">Eduardo</h3>
+                        <p className="card-subtitle">Instructor de Pesas</p>
+                        <div className="card-icons">
+                            <a href="#" className="icon">Instagram</a>
+                        </div>
+                    </div>
+                    <div className="card">
                         <img src="https://via.placeholder.com/150" alt="Entrenador 2" className="card-image"/>
-                        <h3 className="card-title">Nombre 2</h3>
+                        <h3 className="card-title">Alejandro</h3>
                         <p className="card-subtitle">Maestro Fitness Instructor</p>
                         <div className="card-icons">
                             <a href="#" className="icon">LinkedIn</a>
@@ -45,78 +53,8 @@ export default function About() {
                     </div>
                     <div className="card">
                         <img src="https://via.placeholder.com/150" alt="Entrenador 2" className="card-image"/>
-                        <h3 className="card-title">Nombre 2</h3>
-                        <p className="card-subtitle">Maestro Fitness Instructor</p>
-                        <div className="card-icons">
-                            <a href="#" className="icon">LinkedIn</a>
-                            <a href="#" className="icon">✖️</a>
-                            <a href="#" className="icon">🌐</a>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <img src="https://via.placeholder.com/150" alt="Entrenador 2" className="card-image"/>
-                        <h3 className="card-title">Nombre 2</h3>
-                        <p className="card-subtitle">Maestro Fitness Instructor</p>
-                        <div className="card-icons">
-                            <a href="#" className="icon">LinkedIn</a>
-                            <a href="#" className="icon">✖️</a>
-                            <a href="#" className="icon">🌐</a>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <img src="https://via.placeholder.com/150" alt="Entrenador 2" className="card-image"/>
-                        <h3 className="card-title">Nombre 2</h3>
-                        <p className="card-subtitle">Maestro Fitness Instructor</p>
-                        <div className="card-icons">
-                            <a href="#" className="icon">LinkedIn</a>
-                            <a href="#" className="icon">✖️</a>
-                            <a href="#" className="icon">🌐</a>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <img src="https://via.placeholder.com/150" alt="Entrenador 2" className="card-image"/>
-                        <h3 className="card-title">Nombre 2</h3>
-                        <p className="card-subtitle">Maestro Fitness Instructor</p>
-                        <div className="card-icons">
-                            <a href="#" className="icon">LinkedIn</a>
-                            <a href="#" className="icon">✖️</a>
-                            <a href="#" className="icon">🌐</a>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <img src="https://via.placeholder.com/150" alt="Entrenador 2" className="card-image"/>
-                        <h3 className="card-title">Nombre 2</h3>
-                        <p className="card-subtitle">Maestro Fitness Instructor</p>
-                        <div className="card-icons">
-                            <a href="#" className="icon">LinkedIn</a>
-                            <a href="#" className="icon">✖️</a>
-                            <a href="#" className="icon">🌐</a>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <img src="https://via.placeholder.com/150" alt="Entrenador 2" className="card-image"/>
-                        <h3 className="card-title">Nombre 2</h3>
-                        <p className="card-subtitle">Maestro Fitness Instructor</p>
-                        <div className="card-icons">
-                            <a href="#" className="icon">LinkedIn</a>
-                            <a href="#" className="icon">✖️</a>
-                            <a href="#" className="icon">🌐</a>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <img src="https://via.placeholder.com/150" alt="Entrenador 2" className="card-image"/>
-                        <h3 className="card-title">Nombre 2</h3>
-                        <p className="card-subtitle">Maestro Fitness Instructor</p>
-                        <div className="card-icons">
-                            <a href="#" className="icon">LinkedIn</a>
-                            <a href="#" className="icon">✖️</a>
-                            <a href="#" className="icon">🌐</a>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <img src="https://via.placeholder.com/150" alt="Entrenador 2" className="card-image"/>
-                        <h3 className="card-title">Nombre 2</h3>
-                        <p className="card-subtitle">Maestro Fitness Instructor</p>
+                        <h3 className="card-title">Brayan</h3>
+                        <p className="card-subtitle">Maestro de Calistenia Instructor</p>
                         <div className="card-icons">
                             <a href="#" className="icon">LinkedIn</a>
                             <a href="#" className="icon">✖️</a>

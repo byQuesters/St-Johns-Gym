@@ -39,6 +39,9 @@ export default function Home() {
             Comenzar
           </a>
         </div>
+        <div className="photowelcome">
+          <img src="/photos/persona.jpeg" alt="" />
+        </div>
       </div>
 
       <div className="part2">
@@ -138,7 +141,7 @@ export default function Home() {
                 la comunidad. Explore estos testimonios inspiradores y vea cómo Gimnasio St. John’s puede ayudarlo a
                 alcanzar sus objetivos de acondicionamiento físico.
               </p>
-              <button>Únete ahora</button>
+              <button className="btn1">Únete ahora</button>
             </div>
             <div className="image-content">
               <img src="yoga-meditation.jpg" alt="Meditación" className="main-image" />
@@ -154,14 +157,10 @@ export default function Home() {
           <h2>Opciones de membresía flexibles que se adaptan a sus objetivos y estilo de vida. ¡Encuentre la opción adecuada y comience a transformar su vida hoy mismo!</h2>
 
           <div className="pricing-section">
-            <div className="pricing-header">
-              <button className="pricing-tab active">Nuevo</button>
-              <button className="pricing-tab">Estudiante</button>
-            </div>
             <div className="pricing-cards">
-              <div className="pricing-card">
-                <h3>SEMANAL</h3>
-                <p className="price">$123MXN</p>
+              <div className="pricing-card featured">
+                <h3>MENSUAL</h3>
+                <p className="price">$700 MXN</p>
                 <ul>
                   <li>✔ Acceso ilimitado a los equipos del gimnasio</li>
                   <li>✔ Acceso a clases grupales de fitness</li>
@@ -171,20 +170,18 @@ export default function Home() {
                 </ul>
                 <button>Obtener ahora</button>
               </div>
-              <div className="pricing-card featured">
-                <h3>MENSUALIDAD</h3>
-                <p className="price">$123MXN</p>
+              <div className="pricing-card">
+                <h3>VISITA</h3>
+                <p className="price">$100 MXN</p>
                 <ul>
-                  <li>✔ Acceso ilimitado a los equipos del gimnasio</li>
+                  <li>✔ Acceso a los equipos del gimnasio por 1 dia</li>
                   <li>✔ Acceso a clases grupales de fitness</li>
-                  <li>✔ Sesión de entrenamiento personal por mes</li>
-                  <li>✔ Orientación nutricional y planes de alimentación</li>
                   <li>✔ Acceso a programas de bienestar</li>
                 </ul>
                 <button className="btnoa">Obtener ahora</button>
               </div>
               <div className="pricing-card">
-                <h3>ANUAL</h3>
+                <h3>ANUALIDAD</h3>
                 <p className="price">$1234MXN</p>
                 <ul>
                   <li>✔ Acceso ilimitado a los equipos del gimnasio</li>

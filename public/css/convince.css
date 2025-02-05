@@ -10,12 +10,13 @@
     width: 40%;
   }
   .part2 .part2divs .image1 img{
-    width: 65vh;
+    width: 64vh;
     height: 100vh;
     border-radius: 3vh;
   }
   .part2 .part2divs .text{
     width: 50%;
+    margin-left: 2%;
   }
   .part2 .part2divs .text h2{
     font-size: 5vh;

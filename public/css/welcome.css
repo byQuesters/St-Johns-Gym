@@ -10,7 +10,6 @@
     rgb(45, 50, 66) 76%,  
     rgb(0, 0, 0) 100%
   );    
-  padding-left: 13vh;
 }
   .titlewelcome{
     padding-top: 20vh;
@@ -18,18 +17,22 @@
     width: 60vh;
     color: white;
     font-size: 4vh;
+    padding-left: 13vh;
   }
   .titlewelcome h1{
     margin: 0;
+    line-height: 1.2; /* Ajusta el espacio entre las líneas de texto */
     }
   .subtitlewelcome{
     display: flex;
     width: 60vh;
     color: white;
     font-size: 2vh;
+    padding-left: 13vh;
   }
   .part1 .btnswelcome{
-    margin-top: 3vh
+    margin-top: 3vh;
+    padding-left: 13vh;
   }
   .part1 .btn1{
     border: .3vh solid #6b4f45;
@@ -39,4 +42,8 @@
     color: white;
     background-color: #AB7C6D;
     text-decoration: none;
+  }
+
+  .photowelcome{
+    position: absolute;
   }

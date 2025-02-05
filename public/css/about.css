@@ -9,9 +9,13 @@ body {
   .hero {
     /* background: url(""); */
     background-color: rgb(113, 113, 113); 
+    background-image: url("../photos/SuperiorCover.JPEG");
     color: white;
     text-align: center;
     padding: 9vh 2vh;
+    background-size: cover;
+    background-position: center top; /* Ajusta la posición vertical */
+    background-repeat: no-repeat;    background-position: center;
   }
   .hero-content h1 {
     margin: 0 auto;
@@ -122,10 +126,12 @@ body {
 
 /* Imagen */
 .card-image {
+  overflow: hidden;
   width: 100%;
   height: auto;
   border-radius: 1vh;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
+  object-fit: cover;  /* Ajusta la imagen sin perder su proporción */
 }
 
 /* Título y subtítulo */
