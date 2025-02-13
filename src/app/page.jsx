@@ -9,7 +9,35 @@ import trayectorystyles from "../../public/css/trayectory.css"
 import pricesstyles from "../../public/css/prices.css"
 import responsivewelcome from "../../public/css/responswelcome.css"
 
+import modalstyles from "../../public/css/modal.css"
+
+import React, { useState } from 'react';
+import { X } from 'react-feather';
+import Image from 'next/image';
+
 export default function Home() {
+
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const toggleModal = () => {
+    setModalOpen(!modalOpen);
+  };
+
+  const openModalForProject = (projectId) => {
+    setSelectedProject(projectId);
+    setModalOpen(true);
+  };
+  
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
+  function scrollToSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
   return (
     <div>
       <header className="header">
@@ -86,34 +114,34 @@ export default function Home() {
               <img src="https://wallpaperaccess.com/full/2465431.jpg" alt="Entrenamiento personal" />
               <h3>Entrenamiento personal</h3>
               <p>Obtén entrenamientos personalizados y entrenamiento personalizado de nuestros entrenadores expertos para lograr tus objetivos de fitness específicos.</p>
-              <button>Conocer más</button>
+              <button onClick={() => openModalForProject("PersonalTrainer")}>Conocer más</button>
             </div>
             <div className="card highlighted">
               <img src="https://wallpaperaccess.com/full/2465431.jpg" alt="Clases de fitness en grupo" />
               <h3>Clases de fitness en grupo</h3>
               <p>Únase a nuestras clases grupales dinámicas y motivadoras, que van desde yoga hasta entrenamiento en intervalos de alta intensidad, diseñadas para todos los niveles de condición física.</p>
-              <button>Conocer más</button>
+              <button onClick={() => openModalForProject("Clases")}>Conocer más</button>
             </div>
             <div className="card">
-              <img src="https://wallpaperaccess.com/full/2465431.jpg" alt="Entrenamiento en zonas especiales" />
+              <img src="/photos/superior1.JPEG" alt="Entrenamiento en zonas especiales" />
               <h3>Entrenamiento en zonas especiales</h3>
-              <p>Planes de nutrición y asesoramiento de nuestros nutricionistas certificados para complementar tu rutina fitness y potenciar tus resultados.</p>
-              <button>Conocer más</button>
+              <p>Desarrolle sus músculos y aumente su fuerza con nuestros equipos de levantamiento de pesas de última generación y nuestras zonas escenciales para ello.</p>
+              <button onClick={() => openModalForProject("Zonas")}>Conocer más</button>
             </div>
             <div className="card">
               <img src="https://wallpaperaccess.com/full/2465431.jpg" alt="Entrenamiento en zonas especiales" />
-              <h3>Programas de bienestar</h3>
-              <p>Programas de bienestar que incluyen manejo del estrés, bienestar mental y técnicas de recuperación para apoyar su salud general.</p>
-              <button>Conocer más</button>
+              <h3>Espacios aclimatados</h3>
+              <p>Todo el gimnasio cuenta con aire acondicionado y dispersores de fragancia para mantener un ambiente fresco y agradable.</p>
+              <button onClick={() => openModalForProject("Clima")}>Conocer más</button>
             </div>
             <div className="card">
-              <img src="https://wallpaperaccess.com/full/2465431.jpg" alt="Entrenamiento en zonas especiales" />
-              <h3>Entrenamiento de fuerza</h3>
-              <p>Desarrolle sus músculos y aumente su fuerza con nuestros programas de entrenamiento de fuerza estructurados y equipos de levantamiento de pesas de última generación.</p>
-              <button>Conocer más</button>
+              <img src="/photos/bano2.jpg" alt="Baños y regaderas" />
+              <h3>Baños y Regaderas</h3> 
+              <p>El gimnasio cuenta con baños y duchas individuales en grupos de hombres y mujeres (no mixtos), tanto en la primera planta como en la segunda.</p>              
+              <button onClick={() => openModalForProject("banos")}>Conocer más</button>
             </div>
             <div className="card">
-              <img src="https://wallpaperaccess.com/full/2465431.jpg" alt="Entrenamiento en zonas especiales" />
+              <img src="/photos/caminadoras1.JPEG" alt="Entrenamiento en zonas especiales" />
               <h3>Entrenamientos cardiovasculares</h3>
               <p>Mejore su resistencia y salud cardiovascular con nuestra variedad de clases y equipos cardiovasculares, adaptados a todos los niveles de condición física.</p>
               <button>Conocer más</button>
@@ -226,6 +254,176 @@ export default function Home() {
         </div>
       </footer>
 
-    </div>
+      {modalOpen && selectedProject === "PersonalTrainer" && (
+        <div className='modalprj1' onClick={closeModal}>
+          <div className='modalcontent1' onClick={(e) => e.stopPropagation()}>
+
+            <button className="close-modal" onClick={closeModal}>
+              <X size={24} />
+            </button>
+
+            <div className="nameprj1">Alcanza tus Objetivos de Fitness con Expertos</div>
+            <div className="categorie1">Entrenamiento Personalizado</div>
+            <div className="descriptionprj1">
+              <h4></h4>
+            </div>
+            <div className='descriptionprj2'>
+              <p>¿Quieres resultados reales y duraderos? Nuestro servicio de Entrenamiento Personal está diseñado para ayudarte a alcanzar tus metas de fitness de manera eficiente y segura. Con el apoyo de nuestros entrenadores certificados, recibirás un plan 100% personalizado que se adapta a tus necesidades, nivel de condición física y objetivos.</p>
+              <p>¿Qué incluye nuestro servicio de Entrenamiento Personal?</p>
+              <ul className="modalul">
+                <li>Evaluación Inicial Gratuita:
+                  <p>Comenzamos con una evaluación completa de tu estado físico actual, incluyendo pruebas de resistencia, fuerza, flexibilidad y composición corporalm, analizamos tus objetivos: ya sea perder peso, ganar masa muscular, mejorar tu rendimiento deportivo o simplemente mantenerte en forma.</p>
+                </li>
+                <li>Planificación Personalizada:
+                  <p>Diseñamos un plan de entrenamiento exclusivo para ti, que incluye ejercicios específicos, rutinas adaptadas a tu horario y recomendaciones nutricionales básicas para garantizar que siempre estés avanzando.</p>
+                </li>
+                <li>Seguimiento Constante:
+                  <p>Nuestros entrenadores te acompañan en cada sesión, corrigiendo tu postura, técnica y motivándote a superar tus límites.</p>
+                </li>
+                <li>Flexibilidad de Horarios:
+                  <p>Ofrecemos sesiones en horarios que se adaptan a tu rutina, ya sea por la mañana, tarde o noche!</p>                  
+                </li>
+              </ul>
+            </div>
+            <button className='btngithublink'> 
+              <a href="https://github.com/AmbrizAlberto/PICK-EM-EVERITHING---PYGAME-PROJECT.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>¡Empieza Hoy Mismo!</a>
+            </button>
+
+          </div>
+        </div>
+      )}
+      {modalOpen && selectedProject === "Clases" && (
+        <div className='modalprj1' onClick={closeModal}>
+          <div className='modalcontent1' onClick={(e) => e.stopPropagation()}>
+
+            <button className="close-modal" onClick={closeModal}>
+              <X size={24} />
+            </button>
+
+            <div className="nameprj1">Diversión, Motivación y Resultados</div>
+            <div className="categorie1">Clases de fitness en grupo</div>
+            <div className="descriptionprj1">
+              <h4></h4>
+            </div>
+            <div className='descriptionprj2'>
+              <p>¿Buscas una forma divertida y efectiva de mantenerte en forma? Nuestras Clases de Fitness en Grupo son la opción perfecta para ti. Con una amplia variedad de disciplinas, desde yoga relajante hasta entrenamientos de alta intensidad, ofrecemos algo para todos, sin importar tu nivel de condición física.</p>
+              <p>¿Qué ofrecemos en nuestras Clases de Fitness en Grupo?</p>
+              <ul className="modalul">
+                <li>Variedad de Disciplinas:
+                  <p>Yoga, Gap, Spinning, CrossFit, Bailoterapia...</p>
+                </li>
+                <li>Ambiente Motivador:
+                  <p>Únete a un grupo de personas con objetivos similares y disfruta de la energía y motivación que se genera en cada clase.</p>              
+                </li>
+                <li>Horarios Flexibles:
+                  <p>Ofrecemos clases en diferentes horarios durante el día para que puedas encontrar una opción que se ajuste a tu rutina.</p>
+                </li>
+                <li>Beneficios para la Salud:
+                  <p>Mejora tu condición física, reduce el estrés y aumenta tu energía.</p>                  
+                </li>
+              </ul>
+            </div>
+            <button className='btngithublink'> 
+              <a href="https://github.com/AmbrizAlberto/PICK-EM-EVERITHING---PYGAME-PROJECT.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>¡Empieza Hoy Mismo!</a>
+            </button>
+
+          </div>
+        </div>
+      )}
+      {modalOpen && selectedProject === "" && (
+        <div className='modalprj1' onClick={closeModal}>
+          <div className='modalcontent1' onClick={(e) => e.stopPropagation()}>
+
+            <button className="close-modal" onClick={closeModal}>
+              <X size={24} />
+            </button>
+
+            <div className="nameprj1">os</div>
+            <div className="categorie1">rupo</div>
+            <div className="descriptionprj1">
+              <h4></h4>
+            </div>
+            <div className='descriptionprj2'>
+              <p>a.</p>
+              <p>¿Qué</p>
+              <ul className="modalul">
+                <li>Variedad de Disciplinas:
+                  <p>Yoga, Gap, Spinning, CrossFit, Bailoterapia...</p>
+                </li>
+              </ul>
+            </div>
+            <button className='btngithublink'> 
+              <a href="https://github.com/AmbrizAlberto/PICK-EM-EVERITHING---PYGAME-PROJECT.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>¡Empieza Hoy Mismo!</a>
+            </button>
+
+          </div>
+        </div>
+      )}
+      {modalOpen && selectedProject === "Zonas" && (
+        <div className='modalprj1' onClick={closeModal}>
+          <div className='modalcontent1' onClick={(e) => e.stopPropagation()}>
+
+            <button className="close-modal" onClick={closeModal}>
+              <X size={24} />
+            </button>
+
+            <div className="nameprj1">Enfócate en tus Músculos</div>
+            <div className="categorie1">Entrenamiento en Zonas Especiales</div>
+            <div className="descriptionprj2">
+              <h4>Nuestras Zonas de Entrenamiento Especializadas están diseñadas para ayudarte a trabajar grupos musculares de manera eficiente y efectiva. Ya sea que busques ganar fuerza, tonificar o mejorar tu rendimiento, estas zonas cuentan con el equipo y el espacio necesario para lograrlo.</h4>
+            </div>
+            <div className='descriptionprj2'>
+              <p>¿Qué ofrecemos en nuestras Zonas de Entrenamiento Especializadas?</p>
+              <ul className="modalul">
+                <li>Equipamiento de Alta Calidad:
+                  <p>Máquinas de resistencia y peso libre para trabajar todos los grupos musculares: piernas, glúteos, espalda, pecho, brazos y core. Equipos especializados para entrenamiento funcional, como kettlebells, barras, mancuernas, bandas de resistencia y más.</p>
+                </li>
+                <div className="photoprj1">
+                  <img src="/photos/superior2.JPEG" className="photoprj1"/>
+                </div>
+                <li>Zonas Específicas para Cada Tipo de Entrenamiento:
+                  <p>Contamos con zonas dividadidas para parte superior e inferior del cuerpo, para entrenamiendo de resistencia, spinning, caminadoras y de clases.
+                  Nuestras zonas están diseñadas para ofrecer un ambiente cómodo y seguro, con equipos bien distribuidos y áreas amplias para que puedas entrenar sin limitaciones.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <button className='btngithublink'> 
+              <a href="https://github.com/AmbrizAlberto/PICK-EM-EVERITHING---PYGAME-PROJECT.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>¡Empieza Hoy Mismo!</a>
+            </button>
+
+          </div>
+        </div>
+      )}
+      {modalOpen && selectedProject === "banos" && (
+        <div className='modalprj1' onClick={closeModal}>
+          <div className='modalcontent1' onClick={(e) => e.stopPropagation()}>
+
+            <button className="close-modal" onClick={closeModal}>
+              <X size={24} />
+            </button>
+
+            <div className="nameprj1">os</div>
+            <div className="categorie1">rupo</div>
+            <div className="descriptionprj1">
+              <h4></h4>
+            </div>
+            <div className='descriptionprj2'>
+              <p>a.</p>
+              <p>¿Qué</p>
+              <ul className="modalul">
+                <li>Variedad de Disciplinas:
+                  <p>Yoga, Gap, Spinning, CrossFit, Bailoterapia...</p>
+                </li>
+              </ul>
+            </div>
+            <button className='btngithublink'> 
+              <a href="https://github.com/AmbrizAlberto/PICK-EM-EVERITHING---PYGAME-PROJECT.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>¡Empieza Hoy Mismo!</a>
+            </button>
+
+          </div>
+        </div>
+      )}
+   </div>
   );
 }
