@@ -15,6 +15,8 @@ import React, { useState } from 'react';
 import { X } from 'react-feather';
 import Image from 'next/image';
 
+import Header from "./components/header1";
+
 export default function Home() {
 
   const [modalOpen, setModalOpen] = useState(false);
@@ -40,19 +42,7 @@ export default function Home() {
 
   return (
     <div>
-      <header className="header">
-        <div className="header-content">
-          <h1 className="header-title">Gimnasio St. John´s | Manzanillo</h1>
-          <nav className="nav-links">
-            <a href="#">Inicio</a>
-            <a href="#">Conócenos</a>
-            <a href="#">Servicios</a>
-            <a href="#">Precios</a>
-            <a href="#">Contacto</a>
-          </nav>
-          <a href="#" className="photos-btn">Mirar Fotos</a>
-        </div>
-      </header>
+      <Header />
       <div className="part1">
         <div>
           <img src="/photos/PersonaFit.png" className="photowelcome" alt="" />
@@ -103,8 +93,8 @@ export default function Home() {
         </div> 
       </div>
 
-      <div className="part3">
-        <div className="services">
+      <div className="part3" id="services">
+        <div className="services" >
           <h1>Servicios</h1>
           <h2>Entrenamientos personalizados, orientación y programas integrales para satisfacer todas sus necesidades de acondicionamiento físico.</h2>
           
@@ -135,8 +125,8 @@ export default function Home() {
               <button onClick={() => openModalForProject("Clima")}>Conocer más</button>
             </div>
             <div className="card">
-              <img src="/photos/bano2.jpg" alt="Baños y regaderas" />
-              <h3>Baños y Regaderas</h3> 
+              {/* <img src="/photos/bano2.jpg" alt="Baños y regaderas" /> */}
+              <img src="/photos/banomujerabajo1.jpeg" alt="Baños y regaderas" />              <h3>Baños y Regaderas</h3> 
               <p>El gimnasio cuenta con baños y duchas individuales en grupos de hombres y mujeres (no mixtos), tanto en la primera planta como en la segunda.</p>              
               <button onClick={() => openModalForProject("banos")}>Conocer más</button>
             </div>
@@ -178,8 +168,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="part5">
-        <div className="plans">
+      <div className="part5" id="prices">
+        <div className="plans" >
           <h1>Consulta nuestros planes fitness </h1>
           <h2>Opciones de membresía flexibles que se adaptan a sus objetivos y estilo de vida. ¡Encuentre la opción adecuada y comience a transformar su vida hoy mismo!</h2>
 
@@ -341,17 +331,24 @@ export default function Home() {
               <X size={24} />
             </button>
 
-            <div className="nameprj1">os</div>
-            <div className="categorie1">rupo</div>
+            <div className="nameprj1">Entrena en un Ambiente Fresco y Agradable</div>
+            <div className="categorie1">Espacios Aclimatados</div>
             <div className="descriptionprj1">
               <h4></h4>
             </div>
             <div className='descriptionprj2'>
-              <p>a.</p>
-              <p>¿Qué</p>
+              <p>En nuestro gimnasio, sabemos que un ambiente cómodo es clave para que disfrutes al máximo de tu entrenamiento. Por eso, todo nuestro espacio está equipado con sistemas de aire acondicionado y dispersores de fragancia, diseñados para mantener un clima fresco, limpio y agradable en todo momento. Ya sea que estés levantando pesas, corriendo en la cinta o participando en una clase grupal, te garantizamos un entorno ideal para que te enfoques en tus objetivos.</p>
+              <p>¿Qué ofrecemos en nuestros Espacios Aclimatados?
+              </p>
               <ul className="modalul">
-                <li>Variedad de Disciplinas:
-                  <p>Yoga, Gap, Spinning, CrossFit, Bailoterapia...</p>
+                <li>Temperatura Controlada:
+                  <p>Sistemas de aire acondicionado de última generación que mantienen una temperatura óptima durante todo el año.</p>
+                </li>
+                <li>Ambiente Fresco y Limpio:
+                  <p>Dispersores de fragancia que mantienen el aire con un aroma agradable y neutralizan olores desagradables, y Ventilación adecuada para garantizar un flujo constante de aire fresco en todas las áreas del gimnasio.</p>
+                </li>
+                <li>Comodidad en Cada Rincón:
+                  <p>Desde la zona de cardio hasta las áreas de peso libre y las salas de clases grupales, todas las áreas están climatizadas para tu bienestar.</p>
                 </li>
               </ul>
             </div>
@@ -372,8 +369,17 @@ export default function Home() {
 
             <div className="nameprj1">Enfócate en tus Músculos</div>
             <div className="categorie1">Entrenamiento en Zonas Especiales</div>
-            <div className="descriptionprj2">
+            <div className="photoprj1">
+              <img src="/photos/crossfit2.jpeg" className="photoprj1"/>
+            </div>
+            <div className="descriptionprj1">
               <h4>Nuestras Zonas de Entrenamiento Especializadas están diseñadas para ayudarte a trabajar grupos musculares de manera eficiente y efectiva. Ya sea que busques ganar fuerza, tonificar o mejorar tu rendimiento, estas zonas cuentan con el equipo y el espacio necesario para lograrlo.</h4>
+            </div>
+            <div className="descriptionprj2">
+              <h4></h4>
+            </div>
+            <div className="photoprj1">
+              <img src="/photos/baile1.JPG" className="photoprj1"/>
             </div>
             <div className='descriptionprj2'>
               <p>¿Qué ofrecemos en nuestras Zonas de Entrenamiento Especializadas?</p>
@@ -417,7 +423,7 @@ export default function Home() {
             <div className='descriptionprj2'>
               <p>¿Quieres mejorar tu salud cardiovascular, aumentar tu resistencia y quemar calorías de manera efectiva? Nuestros Entrenamientos Cardiovasculares están diseñados para ayudarte a alcanzar estos objetivos, sin importar tu nivel de condición física. Con una amplia variedad de clases y equipos especializados, te ofrecemos las herramientas necesarias para mantener tu corazón sano y tu cuerpo en forma.</p>
               <div className="photoprj1">
-                <img src="/photos/caminadoras3.JPEG" className="photoprj1"/>
+                <img src="/photos/caminadoras2.JPEG" className="photoprj1"/>
               </div>
               <p>¿Qué ofrecemos en nuestros Entrenamientos Cardiovasculares?</p>
               <ul className="modalul">
@@ -425,11 +431,14 @@ export default function Home() {
                   <p>Cintas de correr, Bicicletas estáticas y elípticas, Escaladora, Trampolin, </p>
                 </li>
                 <div className="photoprj1">
-                  <img src="/photos/spinning1.JPG" className="photoprj1"/>
+                  <img src="/photos/caminadoras3.JPEG" className="photoprj1"/>
                 </div>
                 <li>Clases Cardiovasculares Dinámicas:
                   <p>Spinning, GAP, Bailoterapia.</p>
                 </li>
+                <div className="photoprj1">
+                  <img src="/photos/spinning2.JPG" className="photoprj1"/>
+                </div>
               </ul>
             </div>
             <button className='btngithublink'> 

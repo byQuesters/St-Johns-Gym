@@ -3,10 +3,12 @@
 import aboutstyles from "../../../public/css/about.css"
 import aboutresponstyles from "../../../public/css/responsabout.css"
 
+import Header from "../components/header2";
 
 export default function About() {
   return (
     <div>
+        <Header />
         <header className="hero">
             <div className="hero-content">
                 <h1>Descubra las cualidades únicas que distinguen a Gimnasio St. John´s</h1>
