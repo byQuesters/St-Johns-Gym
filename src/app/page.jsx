@@ -144,7 +144,7 @@ export default function Home() {
               <img src="/photos/caminadoras1.JPEG" alt="Entrenamiento en zonas especiales" />
               <h3>Entrenamientos cardiovasculares</h3>
               <p>Mejore su resistencia y salud cardiovascular con nuestra variedad de clases y equipos cardiovasculares, adaptados a todos los niveles de condición física.</p>
-              <button>Conocer más</button>
+              <button onClick={() => openModalForProject("caminadoras")}>Conocer más</button>
             </div>
 
           </div>
@@ -307,6 +307,9 @@ export default function Home() {
             </div>
             <div className='descriptionprj2'>
               <p>¿Buscas una forma divertida y efectiva de mantenerte en forma? Nuestras Clases de Fitness en Grupo son la opción perfecta para ti. Con una amplia variedad de disciplinas, desde yoga relajante hasta entrenamientos de alta intensidad, ofrecemos algo para todos, sin importar tu nivel de condición física.</p>
+              <div className="photoprj1">
+                  <img src="/photos/superior2.JPEG" className="photoprj1"/>
+              </div>
               <p>¿Qué ofrecemos en nuestras Clases de Fitness en Grupo?</p>
               <ul className="modalul">
                 <li>Variedad de Disciplinas:
@@ -330,7 +333,7 @@ export default function Home() {
           </div>
         </div>
       )}
-      {modalOpen && selectedProject === "" && (
+      {modalOpen && selectedProject === "Clima" && (
         <div className='modalprj1' onClick={closeModal}>
           <div className='modalcontent1' onClick={(e) => e.stopPropagation()}>
 
@@ -386,6 +389,47 @@ export default function Home() {
                   Nuestras zonas están diseñadas para ofrecer un ambiente cómodo y seguro, con equipos bien distribuidos y áreas amplias para que puedas entrenar sin limitaciones.
                   </p>
                 </li>
+                <div className="photoprj1"> 
+                  <img src="/photos/pierna3.jpeg" className="photoprj1"/>
+                </div>
+              </ul>
+            </div>
+            <button className='btngithublink'> 
+              <a href="https://github.com/AmbrizAlberto/PICK-EM-EVERITHING---PYGAME-PROJECT.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>¡Empieza Hoy Mismo!</a>
+            </button>
+
+          </div>
+        </div>
+      )}
+      {modalOpen && selectedProject === "caminadoras" && (
+        <div className='modalprj1' onClick={closeModal}>
+          <div className='modalcontent1' onClick={(e) => e.stopPropagation()}>
+
+            <button className="close-modal" onClick={closeModal}>
+              <X size={24} />
+            </button>
+
+            <div className="nameprj1">Fortalece tu Corazón y Mejora tu Resistencia</div>
+            <div className="categorie1">Entrenamientos Cardiovasculares</div>
+            <div className="descriptionprj1">
+              <h4></h4>
+            </div>
+            <div className='descriptionprj2'>
+              <p>¿Quieres mejorar tu salud cardiovascular, aumentar tu resistencia y quemar calorías de manera efectiva? Nuestros Entrenamientos Cardiovasculares están diseñados para ayudarte a alcanzar estos objetivos, sin importar tu nivel de condición física. Con una amplia variedad de clases y equipos especializados, te ofrecemos las herramientas necesarias para mantener tu corazón sano y tu cuerpo en forma.</p>
+              <div className="photoprj1">
+                <img src="/photos/caminadoras3.JPEG" className="photoprj1"/>
+              </div>
+              <p>¿Qué ofrecemos en nuestros Entrenamientos Cardiovasculares?</p>
+              <ul className="modalul">
+                <li>Equipos de Última Generación:
+                  <p>Cintas de correr, Bicicletas estáticas y elípticas, Escaladora, Trampolin, </p>
+                </li>
+                <div className="photoprj1">
+                  <img src="/photos/spinning1.JPG" className="photoprj1"/>
+                </div>
+                <li>Clases Cardiovasculares Dinámicas:
+                  <p>Spinning, GAP, Bailoterapia.</p>
+                </li>
               </ul>
             </div>
             <button className='btngithublink'> 
@@ -403,18 +447,32 @@ export default function Home() {
               <X size={24} />
             </button>
 
-            <div className="nameprj1">os</div>
-            <div className="categorie1">rupo</div>
+            <div className="nameprj1">Comodidad y Privacidad para tu Bienestar</div>
+            <div className="categorie1">Baños y Regaderas</div>
             <div className="descriptionprj1">
-              <h4></h4>
+              <div className="photoprj1"> 
+                <img src="/photos/banomujerabajo2.jpeg" className="photoprj1"/>
+              </div>
             </div>
             <div className='descriptionprj2'>
-              <p>a.</p>
-              <p>¿Qué</p>
+              <p>En nuestro gimnasio, entendemos que la comodidad y la higiene son aspectos fundamentales para que disfrutes de una experiencia completa. Por eso, contamos con baños y regaderas individuales diseñados para ofrecerte privacidad y confort después de tu entrenamiento. Nuestras instalaciones están disponibles tanto en la primera como en la segunda planta, separadas por grupos de hombres y mujeres (no mixtos), garantizando un ambiente seguro y respetuoso para todos.</p>
+              <div className="photoprj1"> 
+                <img src="/photos/banomujerabajo1.jpeg" className="photoprj1"/>
+              </div>
+              <p>¿Qué ofrecemos en nuestras instalaciones de Baños y Regaderas?</p>
               <ul className="modalul">
-                <li>Variedad de Disciplinas:
-                  <p>Yoga, Gap, Spinning, CrossFit, Bailoterapia...</p>
+                <li>Duchas Individuales:
+                  <p>Espacios privados y cómodos para que puedas refrescarte después de tu entrenamiento.</p>
                 </li>
+                <div className="photoprj1"> 
+                  <img src="/photos/banohombreabajo1.jpeg" className="photoprj1"/>
+                </div>
+                <li>Baños Limpios y Modernos:
+                  <p>Instalaciones impecables, limpiadas y desinfectadas regularmente para garantizar la máxima higiene y amplios espejos y áreas de preparación personal para que puedas arreglarte con tranquilidad.</p>
+                </li>
+                <div className="photoprj1"> 
+                  <img src="/photos/banohombreabajo2.JPG" className="photoprj1"/>
+                </div>
               </ul>
             </div>
             <button className='btngithublink'> 
