@@ -12,7 +12,7 @@ export default function About() {
         <header className="hero">
             <div className="hero-content">
                 <h1>Descubra las cualidades únicas que distinguen a Gimnasio St. John´s</h1>
-                <p>Descubra cómo nuestro compromiso con la excelencia, nuestros programas innovadores y nuestra comunidad apasionada hacen de FitLife Studio el destino definitivo para su viaje de fitness.</p>
+                <p>Descubra cómo nuestro compromiso con la excelencia, nuestros programas innovadores y nuestra comunidad apasionada hacen de el Gimnasio St. John´s el destino definitivo para su viaje de fitness.</p>
             </div>
         </header>
 

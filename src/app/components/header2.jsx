@@ -6,8 +6,8 @@ function Header() {
             <div className="header-content">
             <h1 className="header-title">Gimnasio St. John´s | Manzanillo</h1>
             <nav className="nav-links">
-                <a href="#">Inicio</a>
-                <a href="#about">Conocenos</a>
+                <a href="/">Inicio</a>
+                <a href="#about">Más</a>
                 <a href="#coachs">Equipo</a>
                 <a href="#ubi">Ubicacion</a>
             </nav>
