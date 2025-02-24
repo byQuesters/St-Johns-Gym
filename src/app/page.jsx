@@ -1,7 +1,6 @@
 "use client";
 
 import mainstyles from "../../public/css/main.css"
-import hdrstyle from "../../public/css/header.css"
 import welcomestyles from "../../public/css/welcome.css"
 import convinceestyles from "../../public/css/convince.css"
 import servicesstyles from "../../public/css/services.css"

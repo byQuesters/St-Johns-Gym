@@ -17,7 +17,7 @@ export default function About() {
         </header>
 
         <main>
-            <section className="part2">
+            <section className="part2" id="about">
             <div className="about-content">
                 <h2>Acerca de Gimnasio St. John´s</h2>
                 <p>En Gimnasio St. John´s, creemos que el fitness es más que una rutina: es una forma de vida. Fundado con la misión de inspirar y empoderar a las personas en sus recorridos de fitness, ofrecemos una amplia gama de servicios diseñados para satisfacer las necesidades únicas de cada miembro. Nuestras instalaciones de última generación, entrenadores expertos y una comunidad vibrante crean un entorno en el que todos pueden prosperar.</p>
@@ -29,7 +29,7 @@ export default function About() {
             </div>
             </section>
 
-            <section className="part3">
+            <section className="part3" id="coachs">
                 <div className="gymteamdesc">
                     <h1>Conoce a nuestros entrenadores expertos</h1>
                     <p>Conozca a los profesionales apasionados y capacitados dedicados a ayudarlo a alcanzar sus objetivos de acondicionamiento físico.</p>
@@ -65,7 +65,7 @@ export default function About() {
                     </div>
                 </div>
             </section>
-            <section className="part4">
+            <section className="part4" id="ubi">
                 <div className="location">
                     <h1>Visita Gimnasio St. John´s</h1>
                     <p>Ubicados convenientemente para satisfacer sus necesidades de acondicionamiento físico. ¡Encuéntrenos y comience su viaje hoy mismo!</p>

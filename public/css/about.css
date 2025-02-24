@@ -13,6 +13,7 @@ body {
     color: white;
     text-align: center;
     padding: 9vh 2vh;
+    padding-top: 15vh;
     background-size: cover;
     background-position: center top; /* Ajusta la posición vertical */
     background-repeat: no-repeat;    background-position: center;
@@ -39,6 +40,7 @@ body {
   }
   
   .part2 {
+    padding-top: 6vh;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -83,7 +85,8 @@ body {
   }
 
   .part3{
-    margin-top: 20vh;
+    padding-top: 10vh;
+    margin-top: 0;
   }
   .part3 h1{
     text-align: center;
