@@ -9,8 +9,8 @@
     rgb(43, 48, 62) 65%,
     rgb(45, 50, 66) 76%,  
     rgb(0, 0, 0) 100%
-  );    
-}
+    );
+  }
   .titlewelcome{
     padding-top: 20vh;
     position: relative;

@@ -19,8 +19,11 @@ body{
     body{
         margin: auto;
     }
+    .header{
+        display: none;
+    }
     .header-content{
-        padding: 0vh 0vh;
+        display: none;
     }
     .header-title {
         width: 15%;
@@ -182,6 +185,9 @@ body{
         bottom: 1vh;
     }
     .header{
+        display: none !important;
+    }
+    .header-content{
         display: none;
     }
     .part1{
