@@ -1,5 +1,5 @@
 /* Estilos básicos para todos los dispositivos */
-body{
+html, body{
     width: 100%;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -181,7 +181,7 @@ body{
     .photowelcome {
         overflow: hidden;
         width: 60%;
-        margin-left: 21vh;
+        margin-left: 10vh;
         bottom: 1vh;
     }
     .header{
@@ -193,7 +193,6 @@ body{
     .part1{
         overflow: hidden;
         padding-top: 0;
-        width: 101%;
         height: 99vh;
         padding-left: 5vh;
     }
@@ -240,6 +239,7 @@ body{
     .custom-list {
         margin-top: 3vh;
         font-size: 3.1vh;
+        margin-left: -5vh;
     }
     .part3{
         width: 100%;
