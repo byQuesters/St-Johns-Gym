@@ -153,8 +153,11 @@ export default function Home() {
                 la comunidad. Explore estos testimonios inspiradores y vea cómo Gimnasio St. John’s puede ayudarlo a
                 alcanzar sus objetivos de acondicionamiento físico.
               </p>
-              <button className="btn1" href="/about">Únete ahora</button>
-            </div>
+              <div className="btnswelcome">
+                <a href="/about" className="btn1">
+                  Unete ahora
+                </a>
+              </div>            </div>
             <div className="image-content">
               <img src="yoga-meditation.jpg" alt="Meditación" className="main-image" />
             </div>
