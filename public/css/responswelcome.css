@@ -18,9 +18,10 @@ html, body{
     } 
 }
 
+/* Dispositivo B - IPAD MINI */
 @media (max-width: 768px) {
     header{
-        display: none;
+        display: none !important;
     }
     body{
         margin: auto;
@@ -48,41 +49,45 @@ html, body{
     .part1{
         padding-top: 15vh;
         width: 100%;
-        height: 99vh;
+        height: 85vh;
     }
     .titlewelcome {
-        padding-top: 5vh;
         width: 80%;
-        font-size: 130%;
-        padding-left: 0;
+        font-size: 250%;
+        padding-top: 0;
+        margin-top: -10%;
+        padding-left: 10%;
     }
     .subtitlewelcome{
         width: 80%;
         color: white;
         font-size: 70%;
         padding-left: 0;
+        padding-top: 0;
+        padding-left: 10%;
+        font-size: 100%;
     }
     .part1 .btnswelcome{
-        padding-left: 0vh;
+        padding-left: 10%;
       }
     .part2{
+        margin: 0;
         margin-top: 7vh;
-        padding-left: 11vh;
+        padding-left: 5vh;
+        width: 70%;
     }
+    .photowelcome{
+        width: 40%;
+        margin-left: 50%;
+        bottom: 0;
+    }       
     .part2 .part2divs{
+        width: 120%;
         flex-direction: column;
     }
     .part2 .part2divs .image1{
-        width: 90%;
+        width: 10%;
         order: 2;
-    }
-    .part2 .part2divs .image1 img{
-        width: 100%;
-        height: auto;
-    }
-    .part2 .part2divs .text{
-        width: 90%;
-        order: 1;
     }
     .part2 .part2divs .text h2{
         font-size: 4vh;
@@ -97,10 +102,12 @@ html, body{
     .custom-list {
         margin-top: 3vh;
         font-size: 3.1vh;
+        margin-left: -2vh;
     }
     .part3{
-        width: 100%;
-        padding-left: 2vh;
+        width: 90%;
+        padding-left: 0;
+        margin: auto;
     }
     .part3 .services{
         margin: auto
@@ -151,7 +158,7 @@ html, body{
         padding: 0 1vh 0 1vh;
     }
     .pricing-section {
-        width: 100%;
+        width: 95%;
     }
     .pricing-cards {
         display: flex;
@@ -162,7 +169,7 @@ html, body{
         padding: 1vh;
         justify-content: flex-start;
         margin-left: -2vh;
-        width: 67vh;
+        width: 100%;
     }
     .pricing-card {
         flex: 0 0 80%;
@@ -185,12 +192,12 @@ header{
         display: none;
 }
 
-/* Dispositivo general - Para cualquier dispositivo con un ancho máximo de 480px */
+/* Dispositivo general - PARA IPHONE SE Y IPHONE 14PRO MAX */
 @media (max-width: 480px) {
     .photowelcome {
         overflow: hidden;
         width: 60%;
-        margin-left: 10vh;
+        margin-left: 40%;
         bottom: 1vh;
     }
     .header{
@@ -206,24 +213,33 @@ header{
         padding-left: 5vh;
     }
     .titlewelcome {
+        padding-left: 5%;
         padding-top: 5vh;
         width: 80%;
         font-size: 130%;
+        margin-top: 5%;
     }
     .subtitlewelcome{
+        padding-left: 5%;
         width: 80%;
         color: white;
         font-size: 70%;
     }
+    .btnswelcome{
+        padding-left: 5% !important;
+    }
     .part2{
-        width: 100%;
+        width: 89%;
+        padding: 0;
         margin-top: 7vh;
         padding-left: 5vh;
     }
     .part2 .part2divs{
+        width: 100%;
         flex-direction: column;
     }
     .part2 .part2divs .image1{
+        margin: auto;
         width: 90%;
         order: 2;
     }
@@ -232,13 +248,13 @@ header{
         height: auto;
     }
     .part2 .part2divs .text{
-        width: 90%;
+        width: 100%;
         order: 1;
     }
     .part2 .part2divs .text h2{
-        font-size: 4vh;
+        font-size: 3.9vh;
         line-height: 1.5;
-        margin-left: 0;
+        margin-left: -1vh;
     }
     .part2 .part2divs .text h3{
         font-size: 3vh;
@@ -314,7 +330,7 @@ header{
         padding: 1vh;
         justify-content: flex-start;
         margin-left: -7vh;
-        width: 47vh;
+        width: 120%;
     }
     .pricing-card {
         flex: 0 0 80%;
