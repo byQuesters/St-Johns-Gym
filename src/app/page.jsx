@@ -50,7 +50,7 @@ export default function Home() {
           <h2>Unete al Gimnasio St. John´s y forma parte de la gran comunidad Fitness, con entrenadores especializados, programas personalizados y areas enfocadas para lograr tus metas saludables.</h2>
         </div>
         <div className="btnswelcome">
-          <a href="#" className="btn1">
+          <a href="#whychosseus" className="btn1">
             Comenzar
           </a>
         </div>
@@ -61,7 +61,7 @@ export default function Home() {
           <div className="image1">
             <img src="https://media1.popsugar-assets.com/files/thumbor/D2nUX2g9K_pEoenE-vyfg-g0bCc/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2015/07/28/954/n/1922398/60943ba1_shutterstock_167050907.jpg" alt="" />
           </div>
-          <div className="text">
+          <div className="text" id="whychosseus">
             <h2>¿Por qué escoger el Gimnasio ST. John´s?</h2>
             <h3>Descubra los beneficios que nos distinguen e impulse su viaje de acondicionamiento físico hacia adelante.</h3>
             <ul className="custom-list">
@@ -153,7 +153,7 @@ export default function Home() {
                 la comunidad. Explore estos testimonios inspiradores y vea cómo Gimnasio St. John’s puede ayudarlo a
                 alcanzar sus objetivos de acondicionamiento físico.
               </p>
-              <button className="btn1">Únete ahora</button>
+              <button className="btn1" href="/about">Únete ahora</button>
             </div>
             <div className="image-content">
               <img src="yoga-meditation.jpg" alt="Meditación" className="main-image" />
@@ -270,10 +270,6 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <button className='btngithublink'> 
-              <a href="https://github.com/AmbrizAlberto/PICK-EM-EVERITHING---PYGAME-PROJECT.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>¡Empieza Hoy Mismo!</a>
-            </button>
-
           </div>
         </div>
       )}
@@ -311,10 +307,6 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <button className='btngithublink'> 
-              <a href="https://github.com/AmbrizAlberto/PICK-EM-EVERITHING---PYGAME-PROJECT.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>¡Empieza Hoy Mismo!</a>
-            </button>
-
           </div>
         </div>
       )}
@@ -347,10 +339,6 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <button className='btngithublink'> 
-              <a href="https://github.com/AmbrizAlberto/PICK-EM-EVERITHING---PYGAME-PROJECT.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>¡Empieza Hoy Mismo!</a>
-            </button>
-
           </div>
         </div>
       )}
@@ -395,10 +383,6 @@ export default function Home() {
                 </div>
               </ul>
             </div>
-            <button className='btngithublink'> 
-              <a href="https://github.com/AmbrizAlberto/PICK-EM-EVERITHING---PYGAME-PROJECT.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>¡Empieza Hoy Mismo!</a>
-            </button>
-
           </div>
         </div>
       )}
@@ -436,10 +420,6 @@ export default function Home() {
                 </div>
               </ul>
             </div>
-            <button className='btngithublink'> 
-              <a href="https://github.com/AmbrizAlberto/PICK-EM-EVERITHING---PYGAME-PROJECT.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>¡Empieza Hoy Mismo!</a>
-            </button>
-
           </div>
         </div>
       )}
@@ -479,10 +459,6 @@ export default function Home() {
                 </div>
               </ul>
             </div>
-            <button className='btngithublink'> 
-              <a href="https://github.com/AmbrizAlberto/PICK-EM-EVERITHING---PYGAME-PROJECT.git"><i className="bi bi-github" style={{ marginRight: '5px' }}></i>¡Empieza Hoy Mismo!</a>
-            </button>
-
           </div>
         </div>
       )}
