@@ -59,7 +59,7 @@ export default function Home() {
       <div className="part2">
         <div className="part2divs">
           <div className="image1">
-            <img src="https://media1.popsugar-assets.com/files/thumbor/D2nUX2g9K_pEoenE-vyfg-g0bCc/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2015/07/28/954/n/1922398/60943ba1_shutterstock_167050907.jpg" alt="" />
+            <img src="/photos/Espalda1copia.JPEG" alt="" />
           </div>
           <div className="text" id="whychosseus">
             <h2>¿Por qué escoger el Gimnasio ST. John´s?</h2>
@@ -96,7 +96,7 @@ export default function Home() {
           <div className="grid-container">
 
             <div className="card">
-              <img src="https://wallpaperaccess.com/full/2465431.jpg" alt="Entrenamiento personal" />
+              <img src="/photos/ApoyoEntrenam1.JPEG" alt="Entrenamiento personal" />
               <h3>Entrenamiento personal</h3>
               <p>Obtén entrenamientos personalizados y entrenamiento personalizado de nuestros entrenadores expertos para lograr tus objetivos de fitness específicos.</p>
               <button onClick={() => openModalForProject("PersonalTrainer")}>Conocer más</button>

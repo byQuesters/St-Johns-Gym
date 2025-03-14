@@ -25,46 +25,10 @@ export default function About() {
                 <p>Nuestra misión es brindar soluciones de acondicionamiento físico de primer nivel que ayuden a nuestros miembros a lograr sus objetivos personales de salud y bienestar. Nos dedicamos a fomentar un ambiente motivador y de apoyo, donde cada individuo se sienta valorado e inspirado para superar sus límites.</p>
             </div>
             <div className="about-image">
-                <img src="https://i5.walmartimages.com/asr/37c9016a-7df4-4cd0-a7d6-5a306314b2a0.31224581ceaed791c4dac8e389b05e29.jpeg" alt="Persona levantando pesas"/>
+                <img src="/photos/Espalda1.JPEG" alt="Persona levantando pesas"/>
             </div>
             </section>
 
-            <section className="part3" id="coachs">
-                <div className="gymteamdesc">
-                    <h1>Conoce a nuestros entrenadores expertos</h1>
-                    <p>Conozca a los profesionales apasionados y capacitados dedicados a ayudarlo a alcanzar sus objetivos de acondicionamiento físico.</p>
-                </div>
-                <div className="card-container">
-                    <div className="card">
-                        <img src="/photos/LaloCoachPhoto1.jpeg" alt="Entrenador 2" className="card-image"/>
-                        <h3 className="card-title">Eduardo</h3>
-                        <p className="card-subtitle">Instructor de Pesas</p>
-                        <div className="card-icons">
-                            <a href="#" className="icon">Instagram</a>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <img src="https://via.placeholder.com/150" alt="Entrenador 2" className="card-image"/>
-                        <h3 className="card-title">Alejandro</h3>
-                        <p className="card-subtitle">Maestro Fitness Instructor</p>
-                        <div className="card-icons">
-                            <a href="#" className="icon">LinkedIn</a>
-                            <a href="#" className="icon">✖️</a>
-                            <a href="#" className="icon">🌐</a>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <img src="https://via.placeholder.com/150" alt="Entrenador 2" className="card-image"/>
-                        <h3 className="card-title">Brayan</h3>
-                        <p className="card-subtitle">Maestro de Calistenia Instructor</p>
-                        <div className="card-icons">
-                            <a href="#" className="icon">LinkedIn</a>
-                            <a href="#" className="icon">✖️</a>
-                            <a href="#" className="icon">🌐</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <section className="part4" id="ubi">
                 <div className="location">
                     <h1>Visita Gimnasio St. John´s</h1>
