@@ -172,7 +172,8 @@ body {
   color: white;
 }
 .part4{
-  margin-top: 20vh;
+  padding-top: 15vh;
+  margin-top: 0;
 }
 .part4 h1{
   text-align: center;
@@ -257,4 +258,60 @@ body {
   height: 50vh;
   border-radius: 1vh;
   overflow: hidden;
+}
+
+
+/* FOOTER */
+footer {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+.footer-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.footer-logo {
+  font-weight: bold;
+  font-size: 3vh;
+  color: #b3624a;
+  margin-bottom: 10px;
+}
+.footer-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #b3624a;
+  transition: 500ms;
+  font-size: 2vh;
+}
+.footer-links a:hover {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #574743;
+  transition: 500ms;
+  font-size: 2vh;
+}
+.footer-social a {
+  margin: 0 8px;
+  color: #b3624a;
+  font-size: 20px;
+}
+.footer-social a:hover {
+  color: #333;
+}
+.footer-bottom {
+  font-size: 2vh;
+  line-height: 1;
+  color: #827462;
+}
+.footer-privacy a {
+  margin: 0 10px;
+  color: #827462;
+  /* text-decoration: none; */
+}
+.footer-privacy a:hover {
+  text-decoration: underline;
 }

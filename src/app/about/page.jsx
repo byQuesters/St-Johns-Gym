@@ -41,7 +41,7 @@ export default function About() {
                     <h2 className="title">DIRECCIÓN</h2>
                     <p className="subtitle">Gimnasio St. John´s | Manzanillo</p>
                     <p className="address">
-                    Av. Paseo de Las Gaviotas s/n, Valle de las Garzas barrio 5, <br />
+                    Av. Paseo de Las Gaviotas s/n, Valle de las Garzas Barrio 5, <br />
                     28219 Manzanillo, Col.
                     </p>
                     <p className="phone">+52 314 334 7544</p>
@@ -64,9 +64,36 @@ export default function About() {
                     loading="lazy"
                     ></iframe>
                 </div>
-                </div>
-            
+            </div>
         </main>
+        <footer>
+            <div className="footer-container">
+            <div className="footer-logo">
+                <span>Gimnasio St. John’s | Manzanillo</span>
+            </div>
+            <div className="footer-links">
+                <a href="#conocenos">Imagenes</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#precios">Precios</a>
+                <a href="#contacto">Contáctanos</a>
+            </div>
+            <div className="footer-social">
+                <a href="#"><i className="bi bi-facebook"></i></a>
+                <a href="#"><i className="bi bi-instagram"></i></a>
+                <a href="#"><i className="bi bi-whatsapp"></i></a>
+                <a href="#"><i className="bi bi-linkedin"></i></a>
+                <a href="#"><i className="bi bi-youtube"></i></a>
+            </div>
+            <div className="footer-bottom">
+                <p>© 2025 Gimnasio Manzanillo St. John’s. Todos los derechos reservados.</p>
+                <div className="footer-privacy">
+                <a href="#privacidad">Política de Privacidad</a>
+                <a href="#terminos">Condiciones de Servicio</a>
+                <a href="#cookies">Configuración de cookies</a>
+                </div>
+            </div>
+            </div>
+        </footer>
     </div>
     );
 }

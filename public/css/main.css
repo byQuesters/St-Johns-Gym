@@ -35,7 +35,7 @@ footer {
 }
 .footer-logo {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 3vh;
   color: #b3624a;
   margin-bottom: 10px;
 }
@@ -43,7 +43,15 @@ footer {
   margin: 0 15px;
   text-decoration: none;
   color: #b3624a;
-  font-size: 14px;
+  transition: 500ms;
+  font-size: 2vh;
+}
+.footer-links a:hover {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #574743;
+  transition: 500ms;
+  font-size: 2vh;
 }
 .footer-social a {
   margin: 0 8px;
@@ -54,13 +62,14 @@ footer {
   color: #333;
 }
 .footer-bottom {
-  font-size: 12px;
-  color: #555;
+  font-size: 2vh;
+  line-height: 1;
+  color: #827462;
 }
 .footer-privacy a {
   margin: 0 10px;
-  color: #555;
-  text-decoration: none;
+  color: #827462;
+  /* text-decoration: none; */
 }
 .footer-privacy a:hover {
   text-decoration: underline;

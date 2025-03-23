@@ -56,12 +56,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="part2">
+      <div className="part2"  id="whychosseus">
         <div className="part2divs">
           <div className="image1">
-            <img src="/photos/Espalda1copia.JPEG" alt="" />
+            <img src="/photos/LaloCoachPhoto.jpeg" alt="" />
           </div>
-          <div className="text" id="whychosseus">
+          <div className="text">
             <h2>¿Por qué escoger el Gimnasio ST. John´s?</h2>
             <h3>Descubra los beneficios que nos distinguen e impulse su viaje de acondicionamiento físico hacia adelante.</h3>
             <ul className="custom-list">
@@ -101,7 +101,7 @@ export default function Home() {
               <p>Obtén entrenamientos personalizados y entrenamiento personalizado de nuestros entrenadores expertos para lograr tus objetivos de fitness específicos.</p>
               <button onClick={() => openModalForProject("PersonalTrainer")}>Conocer más</button>
             </div>
-            <div className="card highlighted">
+            <div className="card">
               <img src="https://wallpaperaccess.com/full/2465431.jpg" alt="Clases de fitness en grupo" />
               <h3>Clases de fitness en grupo</h3>
               <p>Únase a nuestras clases grupales dinámicas y motivadoras, que van desde yoga hasta entrenamiento en intervalos de alta intensidad, diseñadas para todos los niveles de condición física.</p>
@@ -216,7 +216,7 @@ export default function Home() {
       <footer>
         <div className="footer-container">
           <div className="footer-logo">
-            <span>🏋️ Gimnasio St. John’s | Manzanillo</span>
+            <span>Gimnasio St. John’s | Manzanillo</span>
           </div>
           <div className="footer-links">
             <a href="#conocenos">Conócenos</a>
@@ -232,7 +232,7 @@ export default function Home() {
             <a href="#"><i className="bi bi-youtube"></i></a>
           </div>
           <div className="footer-bottom">
-            <p>© 2024 Gimnasio Manzanillo St. John’s. Todos los derechos reservados.</p>
+            <p>© 2025 Gimnasio Manzanillo St. John’s. Todos los derechos reservados.</p>
             <div className="footer-privacy">
               <a href="#privacidad">Política de Privacidad</a>
               <a href="#terminos">Condiciones de Servicio</a>
