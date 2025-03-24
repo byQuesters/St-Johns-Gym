@@ -1,347 +1,434 @@
 /* Estilos básicos para todos los dispositivos */
-html, body{
+html, body {
     width: 100%;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-}
+  }
   
-/* Estilos responsivos */
-
-@media (max-width: 1024px) {
-    header{
-        display: none;
+  footer {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-logo {
+    font-weight: bold;
+    font-size: 3vh;
+    color: #b3624a;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #b3624a;
+    transition: 500ms;
+    font-size: 2vh;
+  }
+  
+  .footer-links a:hover {
+    color: #574743;
+  }
+  
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-social a {
+    color: #b3624a;
+    font-size: 20px;
+  }
+  
+  .footer-social a:hover {
+    color: #333;
+  }
+  
+  .footer-bottom {
+    font-size: 2vh;
+    line-height: 1;
+    color: #827462;
+  }
+  
+  .footer-privacy {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .footer-privacy a {
+    color: #827462;
+  }
+  
+  .footer-privacy a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos responsivos */
+  
+  @media (max-width: 1024px) {
+    header {
+      display: none;
     }
-    .header-content{
-        padding: 0vh 0vh;
-    } 
-}
-
-/* Dispositivo B - IPAD MINI */
-@media (max-width: 768px) {
-    header{
-        display: none !important;
+    .header-content {
+      padding: 0;
     }
-    body{
-        margin: auto;
+  }
+  
+  /* Dispositivo B - IPAD MINI */
+  @media (max-width: 768px) {
+    header {
+      display: none !important;
     }
-    .header{
-        display: none;
+    body {
+      margin: auto;
     }
-    .header-content{
-        display: none;
+    .header {
+      display: none;
+    }
+    .header-content {
+      display: none;
     }
     .header-title {
-        width: 15%;
-        font-size: 2vh;
-        margin: 0 0vh;
-        margin-left: 2vh;
-        text-align: center;
-    } 
+      width: 15%;
+      font-size: 2vh;
+      margin: 0 0vh;
+      margin-left: 2vh;
+      text-align: center;
+    }
     .nav-links {
-        gap: 2vh;
-        margin-right: 5vh;
+      gap: 2vh;
+      margin-right: 5vh;
     }
     .photos-btn {
-        display: none;
+      display: none;
     }
-    .part1{
-        padding-top: 15vh;
-        width: 100%;
-        height: 85vh;
-    }
-    .titlewelcome {
-        width: 80%;
-        font-size: 250%;
-        padding-top: 0;
-        margin-top: -10%;
-        padding-left: 10%;
-    }
-    .subtitlewelcome{
-        width: 80%;
-        color: white;
-        font-size: 70%;
-        padding-left: 0;
-        padding-top: 0;
-        padding-left: 10%;
-        font-size: 100%;
-    }
-    .part1 .btnswelcome{
-        padding-left: 10%;
-      }
-    .part2{
-        margin: 0;
-        margin-top: 7vh;
-        padding-left: 5vh;
-        width: 70%;
-    }
-    .photowelcome{
-        width: 40%;
-        margin-left: 50%;
-        bottom: 0;
-    }       
-    .part2 .part2divs{
-        width: 120%;
-        flex-direction: column;
-    }
-    .part2 .part2divs .image1{
-        width: 10%;
-        order: 2;
-    }
-    .part2 .part2divs .text h2{
-        font-size: 4vh;
-        line-height: 1.5;
-        margin-left: 0;
-    }
-    .part2 .part2divs .text h3{
-        font-size: 3vh;
-        line-height: 1.5;
-        margin-left: 0;
-    }
-    .custom-list {
-        margin-top: 3vh;
-        font-size: 3.1vh;
-        margin-left: -2vh;
-    }
-    .part3{
-        width: 90%;
-        padding-left: 0;
-        margin: auto;
-    }
-    .part3 .services{
-        margin: auto
-    }
-    .part3 .services h1{
-        font-size: 5vh;
-    }
-    .part3 .services h2{
-        font-size: 3vh;
-    }
-    .grid-container {
-        grid-template-columns: repeat(1, minmax(300px, 1fr));
-    }
-    .part4{
-        width: 100%;
-        padding-left: 0;
-        margin-top: 10vh;
-    }
-    .part4 .trayectory{
-        margin: auto;
-    }
-    .part4 .trayectory h1{
-        font-size: 5vh;
-    }
-    .success-section {
-        flex-direction: column;
-    }
-    .text-content {
-        order: 2;
-    }
-    .text-content {
-        max-width: 100%;
-    }
-    .text-content p {
-        font-size: 3vh;
-    }
-    .part5{
-        padding-left: 5vh;
-    }
-    .part5 .plans{
-        margin: auto;
-    }
-    .part5 .plans h1{
-        font-size: 5vh;
-    }
-    .part5 .plans h2{
-        font-size: 3vh;
-        padding: 0 1vh 0 1vh;
-    }
-    .pricing-section {
-        width: 95%;
-    }
-    .pricing-cards {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        gap: .5vh;
-        padding: 1vh;
-        justify-content: flex-start;
-        margin-left: -2vh;
-        width: 100%;
-    }
-    .pricing-card {
-        flex: 0 0 80%;
-        scroll-snap-align: center;
-        width: auto;
-    }
-
-}
-
-
-/* Dispositivo A - 390px x 844px */
-@media (min-width: 390px) and (max-width: 390px) and (min-height: 844px) and (max-height: 844px) {
-    .photowelcome {
-        width: 60%;
-        margin-top: 50vh;
-        margin-left: 37%;
-    }
-}
-header{
-        display: none;
-}
-
-/* Dispositivo general - PARA IPHONE SE Y IPHONE 14PRO MAX */
-@media (max-width: 480px) {
-    .photowelcome {
-        overflow: hidden;
-        width: 60%;
-        margin-left: 40%;
-        bottom: 1vh;
-    }
-    .header{
-        display: none !important;
-    }
-    .header-content{
-        display: none;
-    }
-    .part1{
-        overflow: hidden;
-        padding-top: 0;
-        height: 99vh;
-        padding-left: 5vh;
+    .part1 {
+      padding-top: 15vh;
+      width: 100%;
+      height: 85vh;
     }
     .titlewelcome {
-        padding-left: 5%;
-        padding-top: 5vh;
-        width: 80%;
-        font-size: 130%;
-        margin-top: 5%;
+      width: 80%;
+      font-size: 250%;
+      padding-top: 0;
+      margin-top: -10%;
+      padding-left: 10%;
     }
-    .subtitlewelcome{
-        padding-left: 5%;
-        width: 80%;
-        color: white;
-        font-size: 70%;
+    .subtitlewelcome {
+      width: 80%;
+      color: white;
+      font-size: 70%;
+      padding-left: 0;
+      padding-top: 0;
+      padding-left: 10%;
+      font-size: 100%;
     }
-    .btnswelcome{
-        padding-left: 5% !important;
+    .part1 .btnswelcome {
+      padding-left: 10%;
     }
-    .part2{
-        width: 89%;
-        padding: 0;
-        margin-top: 7vh;
-        padding-left: 5vh;
+    .part2 {
+      margin: 0;
+      margin-top: 7vh;
+      padding-left: 5vh;
+      width: 70%;
     }
-    .part2 .part2divs{
-        width: 100%;
-        flex-direction: column;
+    .photowelcome {
+      width: 40%;
+      margin-left: 50%;
+      bottom: 0;
     }
-    .part2 .part2divs .image1{
-        margin: auto;
-        width: 90%;
-        order: 2;
+    .part2 .part2divs {
+      width: 120%;
+      flex-direction: column;
     }
-    .part2 .part2divs .image1 img{
-        width: 100%;
-        height: auto;
+    .part2 .part2divs .image1 {
+      width: 10%;
+      order: 2;
     }
-    .part2 .part2divs .text{
-        width: 100%;
-        order: 1;
+    .part2 .part2divs .text h2 {
+      font-size: 4vh;
+      line-height: 1.5;
+      margin-left: 0;
     }
-    .part2 .part2divs .text h2{
-        font-size: 3.9vh;
-        line-height: 1.5;
-        margin-left: -1vh;
-    }
-    .part2 .part2divs .text h3{
-        font-size: 3vh;
-        line-height: 1.5;
-        margin-left: 0;
+    .part2 .part2divs .text h3 {
+      font-size: 3vh;
+      line-height: 1.5;
+      margin-left: 0;
     }
     .custom-list {
-        margin-top: 3vh;
-        font-size: 3.1vh;
-        margin-left: -5vh;
+      margin-top: 3vh;
+      font-size: 3.1vh;
+      margin-left: -2vh;
     }
-    .part3{
-        width: 100%;
-        padding-left: 5%;
+    .part3 {
+      width: 90%;
+      padding-left: 0;
+      margin: auto;
     }
-    .part3 .services{
-        margin: auto
+    .part3 .services {
+      margin: auto;
     }
-    .part3 .services h1{
-        font-size: 5vh;
+    .part3 .services h1 {
+      font-size: 5vh;
     }
-    .part3 .services h2{
-        font-size: 3vh;
+    .part3 .services h2 {
+      font-size: 3vh;
     }
     .grid-container {
-        grid-template-columns: repeat(1, minmax(300px, 1fr));
+      grid-template-columns: repeat(1, minmax(300px, 1fr));
     }
-    .part4{
-        width: 100%;
-        padding-left: 4%;
-        margin-top: 10vh;
+    .part4 {
+      width: 100%;
+      padding-left: 0;
+      margin-top: 10vh;
     }
-    .part4 .trayectory{
-        margin: auto;
+    .part4 .trayectory {
+      margin: auto;
     }
-    .part4 .trayectory h1{
-        font-size: 5vh;
+    .part4 .trayectory h1 {
+      font-size: 5vh;
     }
     .success-section {
-        flex-direction: column;
+      flex-direction: column;
     }
     .text-content {
-        order: 2;
+      order: 2;
     }
     .text-content {
-        max-width: 100%;
+      max-width: 100%;
     }
     .text-content p {
-        font-size: 3vh;
+      font-size: 3vh;
     }
-    .part5{
-        padding-left: 12%;
+    .part5 {
+      padding-left: 5vh;
     }
-    .part5 .plans{
-        margin: auto;
+    .part5 .plans {
+      margin: auto;
     }
-    .part5 .plans h1{
-        font-size: 5vh;
+    .part5 .plans h1 {
+      font-size: 5vh;
     }
-    .part5 .plans h2{
-        font-size: 3vh;
-        padding: 0 1vh 0 1vh;
+    .part5 .plans h2 {
+      font-size: 3vh;
+      padding: 0 1vh 0 1vh;
     }
     .pricing-section {
-        width: 100%;
+      width: 95%;
     }
     .pricing-cards {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        gap: .5vh;
-        padding: 1vh;
-        justify-content: flex-start;
-        margin-left: -7vh;
-        width: 120%;
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 0.5vh;
+      padding: 1vh;
+      justify-content: flex-start;
+      margin-left: -2vh;
+      width: 100%;
     }
     .pricing-card {
-        flex: 0 0 80%;
-        scroll-snap-align: center;
-        width: auto;
+      flex: 0 0 80%;
+      scroll-snap-align: center;
+      width: auto;
     }
-
-}
-
-@media (max-width: 413px) {
-    header{
-        display: none;
+  }
+  
+  /* Dispositivo A - 390px x 844px */
+  @media (min-width: 390px) and (max-width: 390px) and (min-height: 844px) and (max-height: 844px) {
+    .photowelcome {
+      width: 60%;
+      margin-top: 50vh;
+      margin-left: 37%;
     }
-}
+  }
+  
+  /* Dispositivo general - PARA IPHONE SE Y IPHONE 14PRO MAX */
+  @media (max-width: 480px) {
+    .photowelcome {
+      overflow: hidden;
+      width: 60%;
+      margin-left: 40%;
+      bottom: 1vh;
+    }
+    .header {
+      display: none !important;
+    }
+    .header-content {
+      display: none;
+    }
+    .part1 {
+      overflow: hidden;
+      padding-top: 0;
+      height: 99vh;
+      padding-left: 5vh;
+    }
+    .titlewelcome {
+      padding-left: 5%;
+      padding-top: 5vh;
+      width: 80%;
+      font-size: 130%;
+      margin-top: 5%;
+    }
+    .subtitlewelcome {
+      padding-left: 5%;
+      width: 80%;
+      color: white;
+      font-size: 70%;
+    }
+    .btnswelcome {
+      padding-left: 5% !important;
+    }
+    .part2 {
+      width: 89%;
+      padding: 0;
+      margin-top: 7vh;
+      padding-left: 5vh;
+    }
+    .part2 .part2divs {
+      width: 100%;
+      flex-direction: column;
+    }
+    .part2 .part2divs .image1 {
+      margin: auto;
+      width: 90%;
+      order: 2;
+    }
+    .part2 .part2divs .image1 img {
+      width: 100%;
+      height: auto;
+    }
+    .part2 .part2divs .text {
+      width: 100%;
+      order: 1;
+    }
+    .part2 .part2divs .text h2 {
+      font-size: 3.9vh;
+      line-height: 1.5;
+      margin-left: -1vh;
+    }
+    .part2 .part2divs .text h3 {
+      font-size: 3vh;
+      line-height: 1.5;
+      margin-left: 0;
+    }
+    .custom-list {
+      margin-top: 3vh;
+      font-size: 3.1vh;
+      margin-left: -5vh;
+    }
+    .part3 {
+      width: 100%;
+      padding-left: 5%;
+    }
+    .part3 .services {
+      margin: auto;
+    }
+    .part3 .services h1 {
+      font-size: 5vh;
+    }
+    .part3 .services h2 {
+      font-size: 3vh;
+    }
+    .grid-container {
+      grid-template-columns: repeat(1, minmax(300px, 1fr));
+    }
+    .part4 {
+      width: 100%;
+      padding-left: 4%;
+      margin-top: 10vh;
+    }
+    .part4 .trayectory {
+      margin: auto;
+    }
+    .part4 .trayectory h1 {
+      font-size: 5vh;
+    }
+    .success-section {
+      flex-direction: column;
+    }
+    .text-content {
+      order: 2;
+    }
+    .text-content {
+      max-width: 100%;
+    }
+    .text-content p {
+      font-size: 3vh;
+    }
+    .part5 {
+      padding-left: 12%;
+    }
+    .part5 .plans {
+      margin: auto;
+    }
+    .part5 .plans h1 {
+      font-size: 5vh;
+    }
+    .part5 .plans h2 {
+      font-size: 3vh;
+      padding: 0 1vh 0 1vh;
+    }
+    .pricing-section {
+      width: 100%;
+    }
+    .pricing-cards {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 0.5vh;
+      padding: 1vh;
+      justify-content: flex-start;
+      margin-left: -7vh;
+      width: 120%;
+    }
+    .pricing-card {
+      flex: 0 0 80%;
+      scroll-snap-align: center;
+      width: auto;
+    }
+      
+    /* Ajustes para el footer en móviles */
+    .footer-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+    .footer-social {
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    .footer-privacy {
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+  }
+  
+  @media (max-width: 413px) {
+    header {
+      display: none;
+    }
+  }
