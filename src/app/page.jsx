@@ -59,7 +59,7 @@ export default function Home() {
       <div className="part2"  id="whychosseus">
         <div className="part2divs">
           <div className="image1">
-            <img src="/photos/LaloCoachPhoto.jpeg" alt="" />
+            <img src="/photos/LaloCoachPhoto01.jpeg" alt="" />
           </div>
           <div className="text">
             <h2>¿Por qué escoger el Gimnasio ST. John´s?</h2>
@@ -102,7 +102,7 @@ export default function Home() {
               <button onClick={() => openModalForProject("PersonalTrainer")}>Conocer más</button>
             </div>
             <div className="card">
-              <img src="https://wallpaperaccess.com/full/2465431.jpg" alt="Clases de fitness en grupo" />
+              <img src="/photos/Clase2.JPEG" alt="Clases de fitness en grupo" />
               <h3>Clases de fitness en grupo</h3>
               <p>Únase a nuestras clases grupales dinámicas y motivadoras, que van desde yoga hasta entrenamiento en intervalos de alta intensidad, diseñadas para todos los niveles de condición física.</p>
               <button onClick={() => openModalForProject("Clases")}>Conocer más</button>
@@ -114,7 +114,7 @@ export default function Home() {
               <button onClick={() => openModalForProject("Zonas")}>Conocer más</button>
             </div>
             <div className="card">
-              <img src="https://wallpaperaccess.com/full/2465431.jpg" alt="Entrenamiento en zonas especiales" />
+              <img src="/photos/Aire1.JPEG" alt="Entrenamiento en zonas especiales" />
               <h3>Espacios aclimatados</h3>
               <p>Todo el gimnasio cuenta con aire acondicionado y dispersores de fragancia para mantener un ambiente fresco y agradable.</p>
               <button onClick={() => openModalForProject("Clima")}>Conocer más</button>
@@ -292,7 +292,7 @@ export default function Home() {
             <div className='descriptionprj2'>
               <p>¿Buscas una forma divertida y efectiva de mantenerte en forma? Nuestras Clases de Fitness en Grupo son la opción perfecta para ti. Con una amplia variedad de disciplinas, desde yoga relajante hasta entrenamientos de alta intensidad, ofrecemos algo para todos, sin importar tu nivel de condición física.</p>
               <div className="photoprj1">
-                  <img src="/photos/superior2.JPEG" className="photoprj1"/>
+                  <img src="/photos/Clase3.JPEG" className="photoprj1"/>
               </div>
               <p>¿Qué ofrecemos en nuestras Clases de Fitness en Grupo?</p>
               <ul className="modalul">
@@ -309,6 +309,9 @@ export default function Home() {
                   <p>Mejora tu condición física, reduce el estrés y aumenta tu energía.</p>                  
                 </li>
               </ul>
+              <div className="photoprj1">
+                  <img src="/photos/Clase1.JPEG" className="photoprj1"/>
+              </div>
             </div>
           </div>
         </div>
@@ -330,6 +333,9 @@ export default function Home() {
               <p>En nuestro gimnasio, sabemos que un ambiente cómodo es clave para que disfrutes al máximo de tu entrenamiento. Por eso, todo nuestro espacio está equipado con sistemas de aire acondicionado y dispersores de fragancia, diseñados para mantener un clima fresco, limpio y agradable en todo momento. Ya sea que estés levantando pesas, corriendo en la cinta o participando en una clase grupal, te garantizamos un entorno ideal para que te enfoques en tus objetivos.</p>
               <p>¿Qué ofrecemos en nuestros Espacios Aclimatados?
               </p>
+              <div className="photoprj1">
+                  <img src="/photos/Aire1.JPEG" className="photoprj1"/>
+              </div>
               <ul className="modalul">
                 <li>Temperatura Controlada:
                   <p>Sistemas de aire acondicionado de última generación que mantienen una temperatura óptima durante todo el año.</p>
@@ -341,6 +347,9 @@ export default function Home() {
                   <p>Desde la zona de cardio hasta las áreas de peso libre y las salas de clases grupales, todas las áreas están climatizadas para tu bienestar.</p>
                 </li>
               </ul>
+              <div className="photoprj1">
+                  <img src="/photos/Aire2.JPEG" className="photoprj1"/>
+              </div>
             </div>
           </div>
         </div>

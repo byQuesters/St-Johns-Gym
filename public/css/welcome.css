@@ -62,13 +62,18 @@
     display: flex;
     width: 100%;
   }
+  .part2 .part2divs .h1{
+    flex-direction: column;
+  }
   .part2 .part2divs .image1{
+    padding-right: 3vh;
     width: 40%;
   }
   .part2 .part2divs .image1 img{
     width: 64vh;
-    height: 100vh;
+    height: auto;
     border-radius: 3vh;
+    margin-top: 5vh;
   }
   .part2 .part2divs .text{
     width: 50%;
