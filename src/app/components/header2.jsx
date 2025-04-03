@@ -26,7 +26,7 @@ function Header() {
             <div className="header-content">
             <h1 className="header-title">Gimnasio St. John´s | MZO</h1>
             <nav className="nav-links">
-                <a href="#">Inicio</a>
+                <a href="/">Inicio</a>
                 <a href="/#whychosseus">Eligenos</a>
                 <a href="/#services">Servicios</a>
                 <a href="/#prices">Precios</a>

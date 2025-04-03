@@ -10,6 +10,7 @@
     rgb(45, 50, 66) 76%,  
     rgb(0, 0, 0) 100%
     );
+    overflow: hidden;
   }
   .titlewelcome{
     padding-top: 20vh;
@@ -51,11 +52,12 @@
     height: auto;
     bottom: 0;
     z-index: 1;
+    bottom: 0;
   }
 
 
 .part2{
-    padding-top: 15vh;
+    padding-top: 5vh;
     padding-left: 13vh;
   }
   .part2 .part2divs{
@@ -73,7 +75,7 @@
     width: 64vh;
     height: auto;
     border-radius: 3vh;
-    margin-top: 5vh;
+    margin-top: 15vh;
   }
   .part2 .part2divs .text{
     width: 50%;
@@ -192,7 +194,7 @@
       margin-top: 20vh;
     }
     .part4 .trayectory{
-      width: 90%;
+      width: 95%;
     }
     .part4 .trayectory h1{
       margin: 0;
@@ -212,6 +214,14 @@
     }
     .text-content {
       max-width: 50%;
+    }
+    .image-content{
+      max-width: 100%;
+    }
+    .image-content img {
+      width: 100%;
+      height: auto;
+      border-radius: 1vh;
     }
     .text-content h1 {
       font-size: 4vh;
@@ -346,4 +356,38 @@
     }
     .pricing-card button:hover {
       background-color: #8b604f;
+    }
+
+    
+    .part6{
+      padding-top: 7vh;
+      width: 90%;
+      text-align: center;
+      margin: auto;
+      font-size: 2.7vh;
+    }
+    .part6 img{
+      width: 70%;
+      margin: 0;
+    }
+
+    .photos-btn-welcome {
+      width: 20vh;
+      background-color: #c49a86;
+      color: #fff;
+      text-decoration: none;
+      padding: 1.5vh 3vh;
+      border-radius: 1vh;
+      font-size: 2.3vh;
+      font-weight: bold;
+      margin-left: 0%;
+      transition: background-color 500ms;
+    }
+  .photos-btn-welcome:hover {
+      background-color: #a87766;
+    }
+    .photos-btn-welcome:hover{
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
     }

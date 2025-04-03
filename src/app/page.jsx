@@ -39,7 +39,7 @@ export default function Home() {
     <div>
       <Header />
       <div className="part1">
-        <div>
+        <div className="photo-container">
           <img src="/photos/PersonaFit.png" className="photowelcome" alt="" />
         </div>
         <div className="titlewelcome">
@@ -50,13 +50,48 @@ export default function Home() {
           <h2>Unete al Gimnasio St. John´s y forma parte de la gran comunidad Fitness, con entrenadores especializados, programas personalizados y areas enfocadas para lograr tus metas saludables.</h2>
         </div>
         <div className="btnswelcome">
-          <a href="#whychosseus" className="btn1">
-            Comenzar
-          </a>
+          <button onClick={() => openModalForProject("choose")} className="photos-btn-welcome">Mirar Fotos</button>
+          
+          {modalOpen && selectedProject === "choose" && (
+            <div className='modalprj1' onClick={closeModal}>
+              <div className='modalcontent1' onClick={(e) => e.stopPropagation()}>
+    
+                <button className="close-modal" onClick={closeModal}>
+                  <X size={24} />
+                </button>
+    
+                <div className="nameprj1">FOTOGRAFIAS</div>
+                <div className="categorie1">Primer Piso</div>
+                <div className="photoprj1">
+                    <img src="/photos/superior1.JPEG" className="photoprj1"/>
+                    <img src="/photos/superior2.JPEG" className="photoprj1"/>
+                    <img src="/photos/pierna3.jpeg" className="photoprj1"/>
+                    <img src="/photos/pierna1.JPG" className="photoprj1"/>
+                    <img src="/photos/crossfit1.jpeg" className="photoprj1"/>
+                    <img src="/photos/banohombreabajo1.jpeg" className="photoprj1"/>
+                    <img src="/photos/banohombreabajo2.JPG" className="photoprj1"/>
+                    <img src="/photos/banomujerabajo1.jpeg" className="photoprj1"/>
+                    <img src="/photos/banomujerabajo2.jpeg" className="photoprj1"/>
+                </div>
+                <div className="categorie1">Segundo Piso</div>
+                <div className="photoprj1">
+                    <img src="/photos/caminadoras1.JPEG" className="photoprj1"/>
+                    <img src="/photos/caminadoras3.JPEG" className="photoprj1"/>
+                    <img src="/photos/spinning2.JPG" className="photoprj1"/>
+                    <img src="/photos/spinning1.JPG" className="photoprj1"/>
+                    <img src="/photos/baile1.JPG" className="photoprj1"/>
+                    <img src="/photos/banohombrearriba2.jpeg" className="photoprj1"/>
+                    <img src="/photos/banomujerarriba1.jpeg" className="photoprj1"/>
+                </div>
+
+              </div>
+            </div>
+          )}
+
         </div>
       </div>
 
-      <div className="part2"  id="whychosseus">
+      <div className="part2" id="whychosseus">
         <div className="part2divs">
           <div className="image1">
             <img src="/photos/LaloCoachPhoto01.jpeg" alt="" />
@@ -159,11 +194,16 @@ export default function Home() {
                 </a>
               </div>            </div>
             <div className="image-content">
-              <img src="yoga-meditation.jpg" alt="Meditación" className="main-image" />
+              <img src="/photos/Trayectoria.png" alt="Meditación" className="main-image" />
             </div>
           </div>
 
         </div>
+      </div>
+
+      <div className="part6" id="horarios">
+          <h1>Clases Grupales</h1>
+          <img src="/photos/HORARIOS.png" alt="" />
       </div>
 
       <div className="part5" id="prices">

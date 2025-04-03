@@ -29,6 +29,7 @@ function Header() {
                 <a href="#">Inicio</a>
                 <a href="#whychosseus">Eligenos</a>
                 <a href="#services">Servicios</a>
+                <a href="#horarios">Clases</a>
                 <a href="#prices">Precios</a>
                 <a href="/about">Contacto</a>
             </nav>

@@ -222,7 +222,7 @@ html, body {
       font-size: 3vh;
     }
     .part5 {
-      padding-left: 5vh;
+      padding-left: 0vh;
     }
     .part5 .plans {
       margin: auto;
@@ -252,6 +252,11 @@ html, body {
       flex: 0 0 80%;
       scroll-snap-align: center;
       width: auto;
+    }
+    .part6 img{
+      width: 100%;
+      margin: 0;
+      margin-left: -2vh;
     }
   }
   
@@ -312,7 +317,7 @@ html, body {
     }
     .part2 .part2divs .image1 {
       margin: auto;
-      width: 90%;
+      width: 100%;
       order: 2;
     }
     .part2 .part2divs .image1 img {
@@ -399,7 +404,7 @@ html, body {
       overflow-x: auto;
       scroll-snap-type: x mandatory;
       gap: 0.5vh;
-      padding: 1vh;
+      padding: -6vh;
       justify-content: flex-start;
       margin-left: -7vh;
       width: 120%;
@@ -411,6 +416,9 @@ html, body {
     }
       
     /* Ajustes para el footer en móviles */
+    footer{
+      margin-left: 2vh;
+    }
     .footer-links {
       flex-direction: column;
       align-items: center;
@@ -424,6 +432,11 @@ html, body {
       flex-direction: column;
       align-items: center;
       gap: 5px;
+    }
+    .part6 img{
+      width: 100%;
+      margin: 0;
+      margin-left: 0vh;
     }
   }
   
