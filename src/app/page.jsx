@@ -150,7 +150,7 @@ export default function Home() {
             </div>
             <div className="card">
               <img src="/photos/Aire1.JPEG" alt="Entrenamiento en zonas especiales" />
-              <h3>Espacios aclimatados</h3>
+              <h3>Espacios Climatizados</h3>
               <p>Todo el gimnasio cuenta con aire acondicionado y dispersores de fragancia para mantener un ambiente fresco y agradable.</p>
               <button onClick={() => openModalForProject("Clima")}>Conocer más</button>
             </div>
@@ -365,13 +365,13 @@ export default function Home() {
             </button>
 
             <div className="nameprj1">Entrena en un Ambiente Fresco y Agradable</div>
-            <div className="categorie1">Espacios Aclimatados</div>
+            <div className="categorie1">Espacios Climatizados</div>
             <div className="descriptionprj1">
               <h4></h4>
             </div>
             <div className='descriptionprj2'>
               <p>En nuestro gimnasio, sabemos que un ambiente cómodo es clave para que disfrutes al máximo de tu entrenamiento. Por eso, todo nuestro espacio está equipado con sistemas de aire acondicionado y dispersores de fragancia, diseñados para mantener un clima fresco, limpio y agradable en todo momento. Ya sea que estés levantando pesas, corriendo en la cinta o participando en una clase grupal, te garantizamos un entorno ideal para que te enfoques en tus objetivos.</p>
-              <p>¿Qué ofrecemos en nuestros Espacios Aclimatados?
+              <p>¿Qué ofrecemos en nuestros Espacios Climatizados?
               </p>
               <div className="photoprj1">
                   <img src="/photos/Aire1.JPEG" className="photoprj1"/>
