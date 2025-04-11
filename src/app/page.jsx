@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import mainstyles from "../../public/css/main.css"
 import welcomestyles from "../../public/css/welcome.css"
@@ -9,10 +9,16 @@ import modalstyles from "../../public/css/modal.css"
 import React, { useState } from 'react';
 import { X } from 'react-feather';
 import Image from 'next/image';
-
+import { useRouter } from "next/navigation";
 import Header from "./components/header1";
 
 export default function Home() {
+
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push('/about');
+  };
 
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
@@ -220,32 +226,32 @@ export default function Home() {
                   <li>✔ Acceso ilimitado a los equipos del gimnasio</li>
                   <li>✔ Acceso a clases grupales de fitness</li>
                   <li>✔ Sesión de entrenamiento personal por mes</li>
-                  <li>✔ Orientación nutricional y planes de alimentación</li>
+                  <li>✔ Acceso a todas las areas del gimnasio</li>
                   <li>✔ Acceso a programas de bienestar</li>
                 </ul>
-                <button>Obtener ahora</button>
+                <button onClick={handleClick}>Obtener ahora</button>
+              </div>
+              <div className="pricing-card">
+                <h3>Semanal</h3>
+                <p className="price">$480 MXN</p>
+                <ul>
+                  <li>✔ Acceso ilimitado a los equipos del gimnasio</li>
+                  <li>✔ Acceso a clases grupales de fitness</li>
+                  <li>✔ Sesión de entrenamiento personal por mes</li>
+                  <li>✔ Acceso a todas las areas del gimnasio</li>
+                  <li>✔ Acceso a programas de bienestar</li>
+                </ul>
+                <button onClick={handleClick}>Obtener ahora</button>
               </div>
               <div className="pricing-card">
                 <h3>VISITA</h3>
                 <p className="price">$100 MXN</p>
                 <ul>
                   <li>✔ Acceso a los equipos del gimnasio por 1 dia</li>
-                  <li>✔ Acceso a clases grupales de fitness</li>
-                  <li>✔ Acceso a programas de bienestar</li>
+                  <li>✔ Acceso a clases grupales de fitness por 1 dia</li>
+                  <li>✔ Acceso a todas las areas del gimnasio</li>
                 </ul>
-                <button className="btnoa">Obtener ahora</button>
-              </div>
-              <div className="pricing-card">
-                <h3>ANUALIDAD</h3>
-                <p className="price">$1234MXN</p>
-                <ul>
-                  <li>✔ Acceso ilimitado a los equipos del gimnasio</li>
-                  <li>✔ Acceso a clases grupales de fitness</li>
-                  <li>✔ Sesión de entrenamiento personal por mes</li>
-                  <li>✔ Orientación nutricional y planes de alimentación</li>
-                  <li>✔ Acceso a programas de bienestar</li>
-                </ul>
-                <button>Obtener ahora</button>
+                <button className="btnoa" onClick={handleClick}>Obtener ahora</button>
               </div>
             </div>
           </div>

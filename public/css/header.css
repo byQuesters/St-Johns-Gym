@@ -19,7 +19,7 @@
     z-index: 1;
   }
   .header-title {
-    font-size: 2.7vh;
+    font-size: 2.4vh;
     font-weight: bold;
     margin: 0 13vh;
   }
@@ -45,7 +45,7 @@
     background-color: #c49a86;
     color: #fff;
     text-decoration: none;
-    padding: 8px 15px;
+    padding: 1.5vh 1vh;
     border-radius: 1vh;
     font-size: 2.3vh;
     font-weight: bold;
