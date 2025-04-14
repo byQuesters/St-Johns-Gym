@@ -267,10 +267,16 @@ html, body {
       margin-top: 50vh;
       margin-left: 37%;
     }
+    .part2{
+      width: 90%;
+    }
   }
   
   /* Dispositivo general - PARA IPHONE SE Y IPHONE 14PRO MAX */
   @media (max-width: 480px) {
+    .mainsection{
+      width: 100%;
+    }
     .photowelcome {
       overflow: hidden;
       width: 60%;
@@ -287,7 +293,7 @@ html, body {
       overflow: hidden;
       padding-top: 0;
       height: 99vh;
-      padding-left: 5vh;
+      padding-left: 0vh;
     }
     .titlewelcome {
       padding-left: 5%;
@@ -306,17 +312,21 @@ html, body {
       padding-left: 5% !important;
     }
     .part2 {
-      width: 89%;
-      padding: 0;
+      width: 90%;
+      padding: 0%;
+      margin: 0%;
+      padding: 0%;
       margin-top: 7vh;
       padding-left: 5vh;
     }
     .part2 .part2divs {
-      width: 100%;
+      width: 90%;
       flex-direction: column;
     }
     .part2 .part2divs .image1 {
       margin: auto;
+      margin-top: -15vh;
+      padding: 0vh;
       width: 100%;
       order: 2;
     }
@@ -329,9 +339,9 @@ html, body {
       order: 1;
     }
     .part2 .part2divs .text h2 {
-      font-size: 3.9vh;
+      font-size: 3.6vh;
       line-height: 1.5;
-      margin-left: -1vh;
+      margin-left: -.5vh;
     }
     .part2 .part2divs .text h3 {
       font-size: 3vh;
@@ -339,13 +349,17 @@ html, body {
       margin-left: 0;
     }
     .custom-list {
+      width: 100%;
       margin-top: 3vh;
       font-size: 3.1vh;
       margin-left: -5vh;
     }
     .part3 {
-      width: 100%;
-      padding-left: 5%;
+      width: 90%;
+      margin: 0vh;
+      padding: 0%;
+      padding-left: 2.7vh;
+      padding-top: 10vh;
     }
     .part3 .services {
       margin: auto;
@@ -357,15 +371,19 @@ html, body {
       font-size: 3vh;
     }
     .grid-container {
+      padding: 0vh;
       grid-template-columns: repeat(1, minmax(300px, 1fr));
     }
     .part4 {
-      width: 100%;
+      width: 90%;
       padding-left: 4%;
       margin-top: 10vh;
     }
     .part4 .trayectory {
       margin: auto;
+    }
+    .success-section {
+      margin-top: 0vh;
     }
     .part4 .trayectory h1 {
       font-size: 5vh;
@@ -383,7 +401,9 @@ html, body {
       font-size: 3vh;
     }
     .part5 {
-      padding-left: 12%;
+      width: 90%;
+      overflow: hidden;
+      padding-left: 3vh;
     }
     .part5 .plans {
       margin: auto;
@@ -417,7 +437,7 @@ html, body {
       
     /* Ajustes para el footer en móviles */
     footer{
-      margin-left: 2vh;
+      margin-left: 0;
     }
     .footer-links {
       flex-direction: column;

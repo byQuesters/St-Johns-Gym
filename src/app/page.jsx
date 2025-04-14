@@ -17,7 +17,7 @@ export default function Home() {
   const router = useRouter();
 
   const handleClick = () => {
-    router.push('/about');
+    router.push('/about') ;
   };
 
   const [modalOpen, setModalOpen] = useState(false);
@@ -42,7 +42,7 @@ export default function Home() {
   }
 
   return (
-    <div>
+    <div className="mainsection">
       <Header />
       <div className="part1">
         <div className="photo-container">
@@ -50,10 +50,10 @@ export default function Home() {
         </div>
         <div className="titlewelcome">
           <h1>TRANSFORMA TU VIDA CON GIMNASIO</h1>
-          <h1>ST. JOHNS</h1>
+          <h1>ST. JOHN’S</h1>
         </div>
         <div className="subtitlewelcome">
-          <h2>Unete al Gimnasio St. John´s y forma parte de la gran comunidad Fitness, con entrenadores especializados, programas personalizados y areas enfocadas para lograr tus metas saludables.</h2>
+          <h2>Unete al Gimnasio St. John’s y forma parte de la gran comunidad Fitness, con entrenadores especializados, programas personalizados y areas enfocadas para lograr tus metas saludables.</h2>
         </div>
         <div className="btnswelcome">
           <button onClick={() => openModalForProject("choose")} className="photos-btn-welcome">Mirar Fotos</button>
@@ -103,7 +103,7 @@ export default function Home() {
             <img src="/photos/LaloCoachPhoto01.jpeg" alt="" />
           </div>
           <div className="text">
-            <h2>¿Por qué escoger el Gimnasio ST. John´s?</h2>
+            <h2>¿Por qué escoger el Gimnasio St. John’s?</h2>
             <h3>Descubra los beneficios que nos distinguen e impulse su viaje de acondicionamiento físico hacia adelante.</h3>
             <ul className="custom-list">
               <li>
@@ -185,16 +185,16 @@ export default function Home() {
           <div className="success-section">
             <div className="text-content">
               <h1>
-                Historias de éxito inspiradoras de miembros de <span>Gimnasio St. Johns</span>
+                Historias de éxito inspiradoras de miembros de <span>Gimnasio St. John’s</span>
               </h1>
               <p>
-                En el Gimnasio ST. John’s Manzanillo, celebramos las increíbles trayectorias de nuestros miembros.
+                En el Gimnasio St. John’s Manzanillo, celebramos las increíbles trayectorias de nuestros miembros.
                 Desde triunfos en la pérdida de peso y logros en el aumento de masa muscular hasta un mayor bienestar
                 y una nueva confianza, las historias de éxito de nuestros miembros resaltan el poder del compromiso y
                 la comunidad. Explore estos testimonios inspiradores y vea cómo Gimnasio St. John’s puede ayudarlo a
                 alcanzar sus objetivos de acondicionamiento físico.
               </p>
-              <div className="btnswelcome">
+              <div style={{paddingLeft: "0vh"}}>
                 <a href="/about" className="btn1">
                   Unete ahora
                 </a>
@@ -265,17 +265,10 @@ export default function Home() {
             <span>Gimnasio St. John’s | Manzanillo</span>
           </div>
           <div className="footer-links">
-            <a href="#conocenos">Conócenos</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#precios">Precios</a>
-            <a href="#contacto">Contáctanos</a>
-          </div>
-          <div className="footer-social">
-            <a href="#"><i className="bi bi-facebook"></i></a>
-            <a href="#"><i className="bi bi-instagram"></i></a>
-            <a href="#"><i className="bi bi-whatsapp"></i></a>
-            <a href="#"><i className="bi bi-linkedin"></i></a>
-            <a href="#"><i className="bi bi-youtube"></i></a>
+            <a href="/about">Conócenos</a>
+            <a href="#services">Servicios</a>
+            <a href="#prices">Precios</a>
+            <a href="/about#ubi">Contáctanos</a>
           </div>
           <div className="footer-bottom">
             <p>© 2025 Gimnasio Manzanillo St. John’s. Todos los derechos reservados.</p>

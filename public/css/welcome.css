@@ -68,7 +68,7 @@
     flex-direction: column;
   }
   .part2 .part2divs .image1{
-    padding-right: 3vh;
+    padding: auto;
     width: 40%;
   }
   .part2 .part2divs .image1 img{

@@ -417,7 +417,7 @@ footer {
     font-size: 4vh;
   }
   .about-content h3 {
-    font-size: 3vh;
+    font-size: 3vh !important;
   }
   .part2 p {
     font-size: 2vh;
@@ -433,8 +433,14 @@ footer {
   .card-container {
     grid-template-columns: 1fr;
   }
+  .container{
+    max-width: 90vh;
+  }
   .info-card {
-    max-width: 100%;
+    width: 90%;
+    min-width: 90%;
+    margin-left: 0%;
+    max-width: 90%;
   }
   .map {
     height: 40vh;
@@ -471,7 +477,7 @@ footer {
     font-size: 2.8vh;
   }
   .part2 p {
-    font-size: 1.8vh;
+    font-size: 2.5vh;
   }
   .part3 h1,
   .part4 h1 {
