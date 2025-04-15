@@ -279,8 +279,9 @@ html, body {
     }
     .photowelcome {
       overflow: hidden;
-      width: 60%;
-      margin-left: 40%;
+      margin-bottom: 10vh;
+      width: 55%;
+      margin-left: 45%;
       bottom: 1vh;
     }
     .header {
@@ -292,7 +293,7 @@ html, body {
     .part1 {
       overflow: hidden;
       padding-top: 0;
-      height: 88vh;
+      height: 89vh;
       padding-left: 0vh;
     }
     .titlewelcome {
