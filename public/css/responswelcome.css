@@ -282,7 +282,8 @@ html, body {
       margin-top: 0vh;
       width: 55%;
       margin-left: 45%;
-      bottom: 11vh;
+      bottom: 0;
+      top: 52.5vh;
     }
     .header {
       display: none !important;
