@@ -135,11 +135,6 @@ export default function About() {
             </div>
             <div className="footer-bottom">
                 <p>© 2025 Gimnasio Manzanillo St. John’s. Todos los derechos reservados.</p>
-                <div className="footer-privacy">
-                <a href="#privacidad">Política de Privacidad</a>
-                <a href="#terminos">Condiciones de Servicio</a>
-                <a href="#cookies">Configuración de cookies</a>
-                </div>
             </div>
             </div>
         </footer>

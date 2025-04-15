@@ -233,7 +233,8 @@ export default function Home() {
               </div>
               <div className="pricing-card">
                 <h3>Semanal</h3>
-                <p className="price">$480 MXN</p>
+                <p className="price">$280 MXN</p>
+                <p className="price">2 X $480 MXN</p>
                 <ul>
                   <li>✔ Acceso ilimitado a los equipos del gimnasio</li>
                   <li>✔ Acceso a clases grupales de fitness</li>
@@ -272,11 +273,6 @@ export default function Home() {
           </div>
           <div className="footer-bottom">
             <p>© 2025 Gimnasio Manzanillo St. John’s. Todos los derechos reservados.</p>
-            <div className="footer-privacy">
-              <a href="#privacidad">Política de Privacidad</a>
-              <a href="#terminos">Condiciones de Servicio</a>
-              <a href="#cookies">Configuración de cookies</a>
-            </div>
           </div>
         </div>
       </footer>

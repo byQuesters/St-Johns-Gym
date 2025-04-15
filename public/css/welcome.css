@@ -295,6 +295,7 @@
       justify-content: center;
       gap: 20px;
     }
+    
     .pricing-card {
       background-color: white;
       border: 1px solid #ccc;
@@ -303,33 +304,43 @@
       text-align: left;
       width: 35vh;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      height: 55vh;
     }
+    
     .pricing-card.featured {
       background-color: #a97a65;
       color: white;
       border: 2px solid #8b604f;
     }
+    
     .pricing-card h3 {
       font-size: 4vh;
       margin-bottom: 1.2vh;
       text-align: center;
     }
+    
     .pricing-card .price {
       font-size: 2.5rem;
       font-weight: bold;
       margin: 10px 0;
       text-align: center;
-      margin-bottom: 5vh;
+      margin-bottom: -2vh;
     }
+    
     .pricing-card ul {
-      min-height: 40%;
+      margin-top: 5vh;
       list-style-type: none;
       padding: 0;
+      flex-grow: 1; /* Ocupa el espacio restante */
     }
+    
     .pricing-card ul li {
       margin: 10px 0;
       font-size: 0.9rem;
     }
+    
     .pricing-card button {
       background-color: #a97a65;
       color: white;
@@ -340,13 +351,13 @@
       width: 100%;
       cursor: pointer;
       transition: background-color 0.3s;
+      margin-top: auto; /* ¡MAGIA! */
     }
+    
     .pricing-card.featured button {
-      background-color: #ffffff; /* Fondo blanco */
-      color: #a97a65; /* Texto en el color principal */
-      border: 2px solid #a97a65; /* Borde del color principal */
-      position: relative;
-      margin: auto;
+      background-color: #ffffff;
+      color: #a97a65;
+      border: 2px solid #a97a65;
     }
     .pricing-card.featured button:hover {
       background-color: #ffdcce; /* Fondo blanco */
@@ -356,7 +367,6 @@
     .pricing-card button:hover {
       background-color: #8b604f;
     }
-
     
     .part6{
       padding-top: 7vh;

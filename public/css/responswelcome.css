@@ -435,6 +435,7 @@ html, body {
       flex: 0 0 80%;
       scroll-snap-align: center;
       width: auto;
+      height: 72vh;
     }
       
     /* Ajustes para el footer en móviles */
