@@ -274,16 +274,13 @@ html, body {
   
   /* Dispositivo general - PARA IPHONE SE Y IPHONE 14PRO MAX */
   @media (max-width: 480px) {
-    .mainsection{
-      width: 100%;
-    }
     .photowelcome {
-      overflow: hidden;
-      margin-top: 0vh;
       width: 55%;
-      margin-left: 45%;
+      right: 0; /* Alinea a la derecha */
+      left: auto; /* Anula cualquier left definido antes */
+      top: auto; /* Anula el top si no es necesario */
       bottom: 0;
-      top: 54vh;
+      margin-left: 0; /* Elimina el margin-left */
     }
     .header {
       display: none !important;
@@ -314,7 +311,7 @@ html, body {
       padding-left: 5% !important;
     }
     .part2 {
-      width: 90%;
+      width: auto;
       padding: 0%;
       margin: 0%;
       padding: 0%;

@@ -10,8 +10,10 @@
     rgb(45, 50, 66) 76%,  
     rgb(0, 0, 0) 100%
     );
-    overflow: hidden;
+    position: relative; /* Añade esto para contener la imagen absoluta */
+    overflow: hidden; /* Esto ya lo tienes, es correcto */
   }
+  
   .titlewelcome{
     padding-top: 20vh;
     position: relative;
