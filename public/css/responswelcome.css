@@ -279,10 +279,10 @@ html, body {
     }
     .photowelcome {
       overflow: hidden;
-      margin-bottom: 10vh;
+      margin-top: 0vh;
       width: 55%;
       margin-left: 45%;
-      bottom: 1vh;
+      bottom: 11vh;
     }
     .header {
       display: none !important;
