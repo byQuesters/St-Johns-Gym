@@ -28,11 +28,11 @@ export default function EasterEggButton() {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        🐣
+        👨🏻‍💻
       </button>
       {showEasterEgg && (
         <div className="easteregg">
-            by Questerz!
+            byQuesters
         </div>
       )}
     </div>
