@@ -65,7 +65,7 @@ export default function About() {
                     Av. Paseo de Las Gaviotas s/n, Valle de las Garzas Barrio 5, <br />
                     28219 Manzanillo, Col.
                     </p>
-                    <p className="phone">+52 314 334 7544</p>
+                    <p className="phone">+52 314 3347 454</p>
                     <a
                     href="https://maps.app.goo.gl/SEYxYoZsgfNXBJbv5"
                     target="_blank"
