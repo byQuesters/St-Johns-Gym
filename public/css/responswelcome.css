@@ -56,7 +56,7 @@ html, body {
   
   .footer-social a {
     color: #b3624a;
-    font-size: 20px;
+    font-size: 2vh
   }
   
   .footer-social a:hover {
@@ -93,6 +93,12 @@ html, body {
     .header-content {
       padding: 0;
     }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+  }
   }
   
   /* Dispositivo B - IPAD MINI */
@@ -129,53 +135,74 @@ html, body {
       height: 90vh;
     }
     .titlewelcome {
-      width: 80%;
-      font-size: 250%;
+      width: 70%;
+      font-size: 5vh;
       padding-top: 0;
-      margin-top: -10%;
       padding-left: 10%;
     }
-    .subtitlewelcome {
-      width: 80%;
+    .subtitlewelcome{
+      width: 50%;
       color: white;
-      font-size: 70%;
+      font-size: 2vh;
       padding-left: 0;
       padding-top: 0;
       padding-left: 10%;
       font-size: 100%;
+    }
+    .subtitlewelcome h2{
+      font-size: 1rem
+    }
+    .part1 .btnswelcome {
+      margin-top: 1vh;
     }
     .part1 .btnswelcome {
       padding-left: 10%;
     }
     .part2 {
       margin: 0;
+      margin: auto;
       margin-top: 7vh;
-      padding-left: 5vh;
-      width: 70%;
-    }
-    .photowelcome {
-      width: 40%;
-      margin-left: 50%;
-      bottom: 0;
+      padding: 0;
+      width: 90%;
     }
     .part2 .part2divs {
-      width: 120%;
+      width: 100%;
       flex-direction: column;
     }
+  .part2 .part2divs .text {
+    width: 90%;
+    margin-left: 0;
+    margin: auto;
+  }
+    .photowelcome {
+      width: 40%;
+      margin-left: 60%;
+      bottom: 0;
+    }
     .part2 .part2divs .image1 {
-      width: 10%;
+      margin: auto;
+      width: 60%;
       order: 2;
     }
     .part2 .part2divs .text h2 {
-      font-size: 4vh;
+      font-size: 6.5vh;
       line-height: 1.5;
       margin-left: 0;
+      text-align: center;
     }
     .part2 .part2divs .text h3 {
-      font-size: 3vh;
+      font-size: 5vh;
+      text-align: center;
       line-height: 1.5;
       margin-left: 0;
     }
+    .part2 .part2divs .image1 img {
+      width: 100%;
+      height: auto;
+      border-radius: 3vh;
+      margin: auto;
+      margin-top: 15vh;
+  }
     .custom-list {
       margin-top: 3vh;
       font-size: 3.1vh;
@@ -235,7 +262,8 @@ html, body {
       padding: 0 1vh 0 1vh;
     }
     .pricing-section {
-      width: 95%;
+      width: 90%;
+      height: auto;
     }
     .pricing-cards {
       display: flex;
@@ -252,6 +280,7 @@ html, body {
       flex: 0 0 80%;
       scroll-snap-align: center;
       width: auto;
+      height: auto;
     }
     .part6 img{
       width: 100%;
@@ -305,7 +334,7 @@ html, body {
       padding-left: 5%;
       width: 80%;
       color: white;
-      font-size: 70%;
+      font-size: 3vh;
     }
     .btnswelcome {
       padding-left: 5% !important;
