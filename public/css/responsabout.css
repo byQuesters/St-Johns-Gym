@@ -360,7 +360,8 @@ footer {
     text-align: center;
   }
   .about-image {
-    margin-top: 3vh;
+    max-width: 40%;
+    margin-top: -2vh;
   }
   .about-image img {
     width: 100%;
