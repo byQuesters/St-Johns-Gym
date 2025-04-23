@@ -97,7 +97,7 @@ export default function Home() {
             <h2>Únete a nuestro grupo de WhatsApp</h2>
             <p>Haz clic en el botón para acceder:</p>
             <a
-              href="https://chat.whatsapp.com/tu-enlace-aqui"
+              href="https://chat.whatsapp.com/HDiCaknmkewATOSaATeU0M"
               target="_blank"
               rel="noopener noreferrer"
               style={{
