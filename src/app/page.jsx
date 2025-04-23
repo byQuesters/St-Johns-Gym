@@ -12,7 +12,10 @@ import Image from 'next/image';
 import { useRouter } from "next/navigation";
 import Header from "./components/header1";
 
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 export default function Home() {
+  const [showModal, setShowModal] = useState(false);
 
   const router = useRouter();
 
@@ -44,6 +47,75 @@ export default function Home() {
   return (
     <div className="mainsection">
       <Header />
+      {/* Botón flotante */}
+      <button
+        onClick={() => setShowModal(true)}
+        style={{
+          position: 'fixed',
+          bottom: '1.5rem',
+          right: '1.5rem',
+          backgroundColor: '#25D366',
+          border: 'none',
+          borderRadius: '50%',
+          width: '60px',
+          height: '60px',
+          boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)',
+          color: '#fff',
+          fontSize: '1.5rem',
+          cursor: 'pointer',
+          zIndex: 9999
+        }}
+        aria-label="Abrir WhatsApp"
+      >
+        <i className="bi bi-whatsapp"></i>
+      </button>
+
+      {/* Modal */}
+      {showModal && (
+        <div
+          onClick={() => setShowModal(false)}
+          style={{
+            position: 'fixed',
+            top: 0, left: 0,
+            width: '100%', height: '100%',
+            backgroundColor: 'rgba(0,0,0,0.5)',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            zIndex: 9998
+          }}
+        >
+          <div
+            onClick={e => e.stopPropagation()}
+            style={{
+              background: '#fff',
+              padding: '2rem',
+              borderRadius: '1rem',
+              maxWidth: '90%',
+              textAlign: 'center',
+              boxShadow: '0 4px 16px rgba(0, 0, 0, 0.3)'
+            }}
+          >
+            <h2>Únete a nuestro grupo de WhatsApp</h2>
+            <p>Haz clic en el botón para acceder:</p>
+            <a
+              href="https://chat.whatsapp.com/tu-enlace-aqui"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-block',
+                marginTop: '1rem',
+                backgroundColor: '#25D366',
+                color: '#fff',
+                padding: '0.75rem 1.5rem',
+                borderRadius: '0.5rem',
+                textDecoration: 'none',
+                fontWeight: 'bold'
+              }}
+            >
+              Unirme al grupo
+            </a>
+          </div>
+        </div>
+      )}
       <div className="part1">
         <div className="photo-container">
           <img src="/photos/PersonaFit.png" className="photowelcome" alt="" />
@@ -130,53 +202,67 @@ export default function Home() {
       </div>
 
       <div className="part3" id="services">
-        <div className="services" >
-          <h1>Servicios</h1>
-          <h2>Entrenamientos personalizados, orientación y programas integrales para satisfacer todas sus necesidades de acondicionamiento físico.</h2>
-          
-          <div className="grid-container">
+  <div className="services">
+    <h1>Servicios</h1>
+    <h2>Entrenamientos personalizados, orientación y programas integrales para satisfacer todas sus necesidades de acondicionamiento físico.</h2>
 
-            <div className="card">
-              <img src="/photos/ApoyoEntrenam1.JPEG" alt="Entrenamiento personal" />
-              <h3>Entrenamiento personal</h3>
-              <p>Obtén entrenamientos personalizados y entrenamiento personalizado de nuestros entrenadores expertos para lograr tus objetivos de fitness específicos.</p>
-              <button onClick={() => openModalForProject("PersonalTrainer")}>Conocer más</button>
-            </div>
-            <div className="card">
-              <img src="/photos/Clase2.JPEG" alt="Clases de fitness en grupo" />
-              <h3>Clases de fitness en grupo</h3>
-              <p>Únase a nuestras clases grupales dinámicas y motivadoras, que van desde yoga hasta entrenamiento en intervalos de alta intensidad, diseñadas para todos los niveles de condición física.</p>
-              <button onClick={() => openModalForProject("Clases")}>Conocer más</button>
-            </div>
-            <div className="card">
-              <img src="/photos/superior1.JPEG" alt="Entrenamiento en zonas especiales" />
-              <h3>Entrenamiento en zonas especiales</h3>
-              <p>Desarrolle sus músculos y aumente su fuerza con nuestros equipos de levantamiento de pesas de última generación y nuestras zonas escenciales para ello.</p>
-              <button onClick={() => openModalForProject("Zonas")}>Conocer más</button>
-            </div>
-            <div className="card">
-              <img src="/photos/Aire1.JPEG" alt="Entrenamiento en zonas especiales" />
-              <h3>Espacios Climatizados</h3>
-              <p>Todo el gimnasio cuenta con aire acondicionado y dispersores de fragancia para mantener un ambiente fresco y agradable.</p>
-              <button onClick={() => openModalForProject("Clima")}>Conocer más</button>
-            </div>
-            <div className="card">
-              {/* <img src="/photos/bano2.jpg" alt="Baños y regaderas" /> */}
-              <img src="/photos/banomujerabajo1.jpeg" alt="Baños y regaderas" />              <h3>Baños y Regaderas</h3> 
-              <p>El gimnasio cuenta con baños y duchas individuales en grupos de hombres y mujeres (no mixtos), tanto en la primera planta como en la segunda.</p>              
-              <button onClick={() => openModalForProject("banos")}>Conocer más</button>
-            </div>
-            <div className="card">
-              <img src="/photos/caminadoras1.JPEG" alt="Entrenamiento en zonas especiales" />
-              <h3>Entrenamientos cardiovasculares</h3>
-              <p>Mejore su resistencia y salud cardiovascular con nuestra variedad de clases y equipos cardiovasculares, adaptados a todos los niveles de condición física.</p>
-              <button onClick={() => openModalForProject("caminadoras")}>Conocer más</button>
-            </div>
-
-          </div>
-
-        </div>
+    {/* Íconos destacados de servicios */}
+    <div className="iconos-servicios" style={{ display: 'flex', justifyContent: 'center', gap: '8%', marginTop: '5vh' }}>
+      <div style={{ textAlign: 'center' }}>
+        <i className="bi bi-wifi" style={{ fontSize: '250%', color: 'black' }}></i>
+        <p style={{ fontSize: '130%', marginTop: '0'}}>Internet Gratuito</p>
       </div>
+      <div style={{ textAlign: 'center' }}>
+        <i className="bi bi-snow" style={{ fontSize: '250%', color: 'black' }}></i>
+        <p style={{ fontSize: '130%', marginTop: '0'}}>Aire Acondicionado</p>
+      </div>
+      <div style={{ textAlign: 'center' }}>
+        <i className="bi bi-universal-access" style={{ fontSize: '250%', color: 'black' }}></i>
+        <p style={{ fontSize: '130%', marginTop: '0'}}>Total Acceso</p>
+      </div>
+    </div>
+
+    <div className="grid-container">
+      <div className="card">
+        <img src="/photos/ApoyoEntrenam1.JPEG" alt="Entrenamiento personal" />
+        <h3>Entrenamiento personal</h3>
+        <p>Obtén entrenamientos personalizados y entrenamiento personalizado de nuestros entrenadores expertos para lograr tus objetivos de fitness específicos.</p>
+        <button onClick={() => openModalForProject("PersonalTrainer")}>Conocer más</button>
+      </div>
+      <div className="card">
+        <img src="/photos/Clase2.JPEG" alt="Clases de fitness en grupo" />
+        <h3>Clases de fitness en grupo</h3>
+        <p>Únase a nuestras clases grupales dinámicas y motivadoras, que van desde yoga hasta entrenamiento en intervalos de alta intensidad, diseñadas para todos los niveles de condición física.</p>
+        <button onClick={() => openModalForProject("Clases")}>Conocer más</button>
+      </div>
+      <div className="card">
+        <img src="/photos/superior1.JPEG" alt="Entrenamiento en zonas especiales" />
+        <h3>Entrenamiento en zonas especiales</h3>
+        <p>Desarrolle sus músculos y aumente su fuerza con nuestros equipos de levantamiento de pesas de última generación y nuestras zonas escenciales para ello.</p>
+        <button onClick={() => openModalForProject("Zonas")}>Conocer más</button>
+      </div>
+      <div className="card">
+        <img src="/photos/Aire1.JPEG" alt="Entrenamiento en zonas especiales" />
+        <h3>Espacios Climatizados</h3>
+        <p>Todo el gimnasio cuenta con aire acondicionado y dispersores de fragancia para mantener un ambiente fresco y agradable.</p>
+        <button onClick={() => openModalForProject("Clima")}>Conocer más</button>
+      </div>
+      <div className="card">
+        <img src="/photos/banomujerabajo1.jpeg" alt="Baños y regaderas" />
+        <h3>Baños y Regaderas</h3>
+        <p>El gimnasio cuenta con baños y duchas individuales en grupos de hombres y mujeres (no mixtos), tanto en la primera planta como en la segunda.</p>
+        <button onClick={() => openModalForProject("banos")}>Conocer más</button>
+      </div>
+      <div className="card">
+        <img src="/photos/caminadoras1.JPEG" alt="Entrenamiento en zonas especiales" />
+        <h3>Entrenamientos cardiovasculares</h3>
+        <p>Mejore su resistencia y salud cardiovascular con nuestra variedad de clases y equipos cardiovasculares, adaptados a todos los niveles de condición física.</p>
+        <button onClick={() => openModalForProject("caminadoras")}>Conocer más</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
       <div className="part4">
         <div className="trayectory">
@@ -207,9 +293,100 @@ export default function Home() {
       </div>
 
       <div className="part6" id="horarios">
-          <h1>Clases Grupales</h1>
-          <img src="/photos/HORARIOS.png" alt="" />
+        <h1>Clases Grupales</h1>
+
+        <h2>Turno Mañana (A.M.)</h2>
+        <div className="horario-tabla-container">
+          <table className="horario-tabla">
+            <thead>
+              <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>7-8</td>
+                <td>Spinning</td>
+                <td>Spinning</td>
+                <td>Spinning</td>
+                <td>Spinning</td>
+                <td>Spinning</td>
+              </tr>
+              <tr>
+                <td>8-9</td>
+                <td>CrossFit <br /> Spinning <br /> Bailoterapia</td>
+                <td>CrossFit <br /> Spinning <br /> Zumba</td>
+                <td>CrossFit <br /> Spinning <br /> Bailoterapia</td>
+                <td>CrossFit <br /> Spinning <br /> Zumba</td>
+                <td>CrossFit <br /> Spinning <br /> Bailoterapia</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Turno Tarde (P.M.)</h2>
+        <div className="horario-tabla-container">
+          <table className="horario-tabla">
+            <thead>
+              <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>6-7</td>
+                <td>Spinning</td>
+                <td>Spinning</td>
+                <td>Spinning</td>
+                <td>Spinning</td>
+                <td>Spinning</td>
+              </tr>
+              <tr>
+                <td>7-8</td>
+                <td>GAP <br /> CrossFit <br /> Spinning</td>
+                <td>Yoga <br /> CrossFit <br /> Spinning</td>
+                <td>GAP <br /> CrossFit <br /> Spinning</td>
+                <td>Yoga <br /> CrossFit <br /> Spinning</td>
+                <td>Bailoterapia <br /> Spinning</td>
+              </tr>
+              <tr>
+                <td>8-9</td>
+                <td>Bailoterapia <br /> Spinning</td>
+                <td>Bailoterapia <br /> Spinning</td>
+                <td>Bailoterapia <br /> Spinning</td>
+                <td>Bailoterapia <br /> Spinning</td>
+                <td>Bailoterapia</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Resumen del Horario</h2>
+        <p><strong>Turno Mañana (A.M.): <br /></strong> Las clases en la mañana incluyen Spinning todos los días de la semana de 7 a 8. De 8 a 9, se ofrecen clases de CrossFit, Spinning y Bailoterapia o Zumba, dependiendo del día.</p>
+
+        <p><strong>Turno Tarde (P.M.): <br /></strong> En la tarde, desde las 6 hasta las 7, se realizan clases de Spinning todos los días. De 7 a 8, se realizan clases de GAP, CrossFit y Spinning, o Yoga, CrossFit y Spinning, o Bailoterapia y Spinning. De 8 a 9, las clases son de Bailoterapia y Spinning, todos los días, con una excepción el viernes, que solo es Bailoterapia.</p>
+
+        <h2>Detalles de Clases por Día</h2>
+        <ul>
+          <li><strong>Lunes: <br /></strong> Spinning (7-8 A.M.), <br />CrossFit, Spinning, Bailoterapia (8-9 A.M.) <br />Spinning (6-7 P.M.) GAP, CrossFit, Spinning (7-8 P.M.) <br />Bailoterapia, Spinning (8-9 P.M.)</li> <br />
+          <li><strong>Martes: <br /></strong> Spinning (7-8 A.M.), <br />CrossFit, Spinning, Zumba (8-9 A.M.) <br />Spinning (6-7 P.M.) <br />Yoga, CrossFit, Spinning (7-8 P.M.) <br />Bailoterapia, Spinning (8-9 P.M.)</li> <br />
+          <li><strong>Miércoles: <br /></strong> Spinning (7-8 A.M.), CrossFit, Spinning, Bailoterapia (8-9 A.M.) <br />Spinning (6-7 P.M.) GAP, CrossFit, Spinning (7-8 P.M.) <br />Bailoterapia, Spinning (8-9 P.M.)</li> <br />
+          <li><strong>Jueves: <br /></strong> Spinning (7-8 A.M.), <br />CrossFit, Spinning, Zumba (8-9 A.M.) <br />Spinning (6-7 P.M.) <br />Yoga, CrossFit, Spinning (7-8 P.M.) <br />Bailoterapia, Spinning (8-9 P.M.)</li> <br />
+          <li><strong>Viernes: <br /></strong> Spinning (7-8 A.M.), <br />CrossFit, Spinning, Bailoterapia (8-9 A.M.) <br />Spinning (6-7 P.M.) <br />Bailoterapia, Spinning (7-8 P.M.) <br />Bailoterapia, Spinning (8-9 P.M.)</li>
+        </ul>
+        
       </div>
+
 
       <div className="part5" id="prices">
         <div className="plans" >
