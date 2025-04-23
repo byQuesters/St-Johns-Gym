@@ -191,8 +191,7 @@ export default function Home() {
                 En el Gimnasio St. John’s Manzanillo, celebramos las increíbles trayectorias de nuestros miembros.
                 Desde triunfos en la pérdida de peso y logros en el aumento de masa muscular hasta un mayor bienestar
                 y una nueva confianza, las historias de éxito de nuestros miembros resaltan el poder del compromiso y
-                la comunidad. Explore estos testimonios inspiradores y vea cómo Gimnasio St. John’s puede ayudarlo a
-                alcanzar sus objetivos de acondicionamiento físico.
+                la comunidad. 
               </p>
               <div style={{paddingLeft: "0vh"}}>
                 <a href="/about" className="btn1">
