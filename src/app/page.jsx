@@ -218,7 +218,7 @@ export default function Home() {
       </div>
       <div style={{ textAlign: 'center' }}>
         <i className="bi bi-universal-access" style={{ fontSize: '250%', color: 'black' }}></i>
-        <p style={{ fontSize: '130%', marginTop: '0'}}>Total Acceso</p>
+        <p style={{ fontSize: '130%', marginTop: '0'}}>Todo Incluido</p>
       </div>
     </div>
 
@@ -408,7 +408,7 @@ export default function Home() {
                 <button onClick={handleClick}>Obtener ahora</button>
               </div>
               <div className="pricing-card">
-                <h3>Semanal</h3>
+                <h3>SEMANAL</h3>
                 <p className="price">$280 MXN</p>
                 <p className="price">2 X $480 MXN</p>
                 <ul>
