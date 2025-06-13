@@ -310,6 +310,14 @@ export default function Home() {
             </thead>
             <tbody>
               <tr>
+                <td>6-7</td>
+                <td></td>
+                <td>Yoga</td>
+                <td></td>
+                <td>Yoga</td>
+                <td></td>
+              </tr>
+              <tr>
                 <td>7-8</td>
                 <td>Spinning</td>
                 <td>Spinning</td>
@@ -367,22 +375,30 @@ export default function Home() {
                 <td>Bailoterapia <br /> Spinning</td>
                 <td>Bailoterapia</td>
               </tr>
+              <tr>
+                <td>9-10</td>
+                <td> <br /> </td>
+                <td>Salsa <br /> Cumbia <br /> Bachata</td>
+                <td> </td>
+                <td>Salsa <br /> Cumbia <br /> Bachata</td>
+                <td></td>
+              </tr>
             </tbody>
           </table>
         </div>
 
         <h2>Resumen del Horario</h2>
-        <p><strong>Turno Mañana (A.M.): <br /></strong> Las clases en la mañana incluyen Spinning todos los días de la semana de 7 a 8. De 8 a 9, se ofrecen clases de CrossFit, Spinning y Bailoterapia o Zumba, dependiendo del día.</p>
+        <p><strong>Turno Mañana (A.M.): <br /></strong> Las clases en la mañana incluyen Yoga los martes y jueves de 6 a 7, Spinning todos los días de la semana de 7 a 8. De 8 a 9, se ofrecen clases de CrossFit, Spinning y Bailoterapia o Zumba, dependiendo del día.</p>
 
-        <p><strong>Turno Tarde (P.M.): <br /></strong> En la tarde, desde las 6 hasta las 7, se realizan clases de Spinning todos los días. De 7 a 8, se realizan clases de GAP, CrossFit y Spinning, o Yoga, CrossFit y Spinning, o Bailoterapia y Spinning. De 8 a 9, las clases son de Bailoterapia y Spinning, todos los días, con una excepción el viernes, que solo es Bailoterapia.</p>
+        <p><strong>Turno Tarde (P.M.): <br /></strong> En la tarde, desde las 6 hasta las 7, se realizan clases de Spinning todos los días. De 7 a 8, se realizan clases de GAP, CrossFit y Spinning, o Yoga, CrossFit y Spinning, o Bailoterapia y Spinning. De 8 a 9, las clases son de Bailoterapia y Spinning, todos los días, con una excepción el viernes, que solo es Bailoterapia, los martes y jueves tambien hay clase de Danza (Cumbia, Bachata y Salsa).</p>
 
         <h2>Detalles de Clases por Día</h2>
         <ul>
-          <li><strong>Lunes: <br /></strong> Spinning (7-8 A.M.), <br />CrossFit, Spinning, Bailoterapia (8-9 A.M.) <br />Spinning (6-7 P.M.) GAP, CrossFit, Spinning (7-8 P.M.) <br />Bailoterapia, Spinning (8-9 P.M.)</li> <br />
-          <li><strong>Martes: <br /></strong> Spinning (7-8 A.M.), <br />CrossFit, Spinning, Zumba (8-9 A.M.) <br />Spinning (6-7 P.M.) <br />Yoga, CrossFit, Spinning (7-8 P.M.) <br />Bailoterapia, Spinning (8-9 P.M.)</li> <br />
-          <li><strong>Miércoles: <br /></strong> Spinning (7-8 A.M.), CrossFit, Spinning, Bailoterapia (8-9 A.M.) <br />Spinning (6-7 P.M.) GAP, CrossFit, Spinning (7-8 P.M.) <br />Bailoterapia, Spinning (8-9 P.M.)</li> <br />
-          <li><strong>Jueves: <br /></strong> Spinning (7-8 A.M.), <br />CrossFit, Spinning, Zumba (8-9 A.M.) <br />Spinning (6-7 P.M.) <br />Yoga, CrossFit, Spinning (7-8 P.M.) <br />Bailoterapia, Spinning (8-9 P.M.)</li> <br />
-          <li><strong>Viernes: <br /></strong> Spinning (7-8 A.M.), <br />CrossFit, Spinning, Bailoterapia (8-9 A.M.) <br />Spinning (6-7 P.M.) <br />Bailoterapia, Spinning (7-8 P.M.) <br />Bailoterapia, Spinning (8-9 P.M.)</li>
+          <li><strong>Lunes: <br /></strong> Yoga (6-7 A.M.), <br />Spinning (7-8 A.M.), <br />CrossFit, Spinning, Bailoterapia (8-9 A.M.) <br />Spinning (6-7 P.M.) GAP, CrossFit, Spinning (7-8 P.M.) <br />Bailoterapia, Spinning (8-9 P.M.)</li> <br />
+          <li><strong>Martes: <br /></strong> Yoga (6-7 A.M.), <br />Spinning (7-8 A.M.), <br />CrossFit, Spinning, Zumba (8-9 A.M.) <br />Spinning (6-7 P.M.) <br />Yoga, CrossFit, Spinning (7-8 P.M.) <br />Bailoterapia, Spinning (8-9 P.M.) <br /> Danza (Cumbia, Bachata, Salsa de 9 - 10 P.M.)</li> <br />
+          <li><strong>Miércoles: <br /></strong> Yoga (6-7 A.M.), <br />Spinning (7-8 A.M.), CrossFit, Spinning, Bailoterapia (8-9 A.M.) <br />Spinning (6-7 P.M.) GAP, CrossFit, Spinning (7-8 P.M.) <br />Bailoterapia, Spinning (8-9 P.M.)</li> <br />
+          <li><strong>Jueves: <br /></strong> Yoga (6-7 A.M.), <br />Spinning (7-8 A.M.), <br />CrossFit, Spinning, Zumba (8-9 A.M.) <br />Spinning (6-7 P.M.) <br />Yoga, CrossFit, Spinning (7-8 P.M.) <br />Bailoterapia, Spinning (8-9 P.M.) <br />Danza (Cumbia, Bachata, Salsa de 9 - 10 P.M.)</li> <br />
+          <li><strong>Viernes: <br /></strong> Yoga (6-7 A.M.), <br />Spinning (7-8 A.M.), <br />CrossFit, Spinning, Bailoterapia (8-9 A.M.) <br />Spinning (6-7 P.M.) <br />Bailoterapia, Spinning (7-8 P.M.) <br />Bailoterapia, Spinning (8-9 P.M.)</li>
         </ul>
         
       </div>
