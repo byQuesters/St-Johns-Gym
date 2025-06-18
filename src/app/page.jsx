@@ -12,6 +12,8 @@ import Image from 'next/image';
 import { useRouter } from "next/navigation";
 import Header from "./components/header1";
 
+import { Analytics } from "@vercel/analytics/next"
+
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export default function Home() {

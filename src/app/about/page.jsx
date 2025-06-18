@@ -8,6 +8,8 @@ import modalstyles from "../../../public/css/modal.css"
 import { X } from 'react-feather';
 import React, { useState } from 'react';
 
+import { Analytics } from "@vercel/analytics/next"
+
 export default function About() {
     
     const [modalOpen, setModalOpen] = useState(false);
