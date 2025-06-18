@@ -2,6 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import EasterEggButton from "@/components/EasterEggButton";
 
+import { Analytics } from "@vercel/analytics/next"
+
 export const metadata = {
   title: "St. Johns Gym - Manzanillo",
   description: "Gimnasio St. Johns Manzanillo",
