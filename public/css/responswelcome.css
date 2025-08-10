@@ -320,14 +320,14 @@ html, body {
     .part1 {
       overflow: hidden;
       padding-top: 0;
-      height: 89vh;
+      height: 95vh;
       padding-left: 0vh;
     }
     .titlewelcome {
       padding-left: 5%;
       padding-top: 5vh;
       width: 80%;
-      font-size: 130%;
+      font-size: 3vh;
       margin-top: 5%;
     }
     .subtitlewelcome {
